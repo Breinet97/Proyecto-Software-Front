@@ -1,0 +1,134 @@
+<header class="header">
+        <nav class="menu">
+            <a href="" class="">
+                <img class="logo" src="./media/imagenes/logo.png" alt="">
+            </a>
+            <ul class="menu__section">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Inicio</a>
+                </li>
+                <li class="menu__item">
+
+                    <a class="menu__link" href="">Menú</a>
+
+                    <!-- <ul class="menu__section-submenu">
+                        <li class="menu__item">
+                            <a href="">Sub menu 1</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">Sub menu 2</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li class="menu__item">
+
+                    <a class="menu__link" href="">Nosotros</a>
+
+                    <!-- <ul class="menu__section-submenu">
+                        <li class="menu__item">
+                            <a href="">Sub menu 1</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">Sub menu 2</a>
+                        </li>
+                    </ul> -->
+                    
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Realizar Pedido</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Neverita</a>
+                </li>
+            </ul>
+
+            <!-- redes sociales  -->
+            <section class="social-media">
+                <a href="" target="_blank" class="social-media__link">
+                    <i class="bi bi-instagram social-media__icon"></i>
+                </a>
+                <a href="" target="_blank" class="social-media__link">
+                    <i class="bi bi-facebook social-media__icon"></i>
+                </a>
+                <a href="" target="_blank" class="social-media__link">
+                    <i class="bi bi-whatsapp social-media__icon"></i>
+                </a>
+            </section>
+        </nav>
+    </header>
+
+
+    csss
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.header{
+    background-color:  #06AB7B;
+    width: 100%;
+    height: 110px;
+    /* position: fixed; */
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.menu{
+    width: 100%;
+    height: inherit;
+    padding: 0 2rem;
+    
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.menu__section{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    list-style: none;
+}
+.menu__item{
+    /* width: 140px;
+    height: 35px; */
+
+    /* border: 2px solid white; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.menu__link{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu__section-submenu{
+    
+}
+.social-media{
+    display: flex;
+    gap: 3rem;
+}
+.social-media__link{
+    text-decoration: none;
+}
+.social-media__icon{
+    color: white;
+    font-size: 32px;
+}

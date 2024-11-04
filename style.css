@@ -1,69 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
-    background-color: black;
+    font-family: "Poppins", Arial, sans-serif;
 }
 .header{
-    /* background-color:  #06AB7B; */
+    background-color:  #06AB7B;
     width: 100%;
     height: 110px;
-}
-.menu{
-    width: 100%;
-    height: inherit;
-    padding: 0 2rem;
-    
     display: flex;
-    justify-content: center;  
     align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    /* position: fixed; */
 }
 .logo{
     width: 90px;
     height: 90px;
 }
-.menu__section{
-    width: 100%;
+.menu__list{
     display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
     list-style: none;
+    gap: 2rem;
 }
-.menu__item{
-    width: 140px;
-    height: 35px;
-
-    border: 2px solid white;
-    
+.menu__option{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
-    text-align: center;
+    position: relative;
 }
 .menu__link{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
     text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
 }
-.menu__section-submenu{
-    
+.menu__link>i{
+    font-size: 24px;
+    padding-left: 1rem;
+}
+.menu__link:hover{
+    color: yellow;
+}
+.submenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    margin: .3rem 0;
+    width: max-content;
+    background-color: black;
+}
+.submenu__option{
+    padding: 1rem;
+}
+.submenu__option:hover{
+    background-color: #06AB7B;
+}
+/* mostrar menu desplegable  */
+.menu__option:hover .submenu{
+    display: block;
 }
 .social-media{
     display: flex;
-    gap: 3rem;
-}
-.social-media__link{
-    text-decoration: none;
+    gap: 2rem;
 }
 .social-media__icon{
+    text-decoration: none;
     color: white;
     font-size: 32px;
 }
