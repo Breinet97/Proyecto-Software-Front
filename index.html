@@ -69,13 +69,13 @@
                         <li class="menu__option submenu__option">
                             <a class="menu__link" href="">Sistema De Puntos</a>
                         </li>
-                        
+
                     </ul>
                 </li>
                 <li class="menu__option">
                     <a class="menu__link" href="">Realizar Pedido
                         <i class="bi bi-cup-straw"></i>
-                    </a>  
+                    </a>
                 </li>
                 <li class="menu__option">
                     <a class="menu__link" href="">Neverita
@@ -85,22 +85,50 @@
             </ul>
         </nav>
         <section class="social-media">
-            <a href="">
+            <a href="https://www.instagram.com/sforyounutrition?igsh=MXRwd3ZlYzlvZzBkNA==">
                 <i class="bi bi-instagram social-media__icon"></i>
             </a>
-            <a href="">
+            <a href="#">
                 <i class="bi bi-facebook social-media__icon"></i>
             </a>
-            <a href="">
+            <a
+                href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">
                 <i class="bi bi-whatsapp social-media__icon"></i>
             </a>
         </section>
     </header>
-    <!-- <main>
-        <button onclick="playVideo()">Haz clic para comenzar el video con sonido</button>
-        <video id="video" autoplay muted loop src="./media/videos/video_inicio.mp4"></video>
-    </main> -->
+    <main class="main">
+        <video class="main__video" id="video" autoplay muted loop src="./media/videos/video_inicio.mp4"></video>
+        <section class="main__aviso" id="aviso">
+            <a href="">
+                <img class="aviso__img" src="./media/imagenes/Perro inicio.png" alt="aviso sistema de puntos">
+            </a>
+            <a class="aviso__icon" id="cerrar" href="#">
+                <i class="bi bi-x-circle-fill"></i>
+            </a>
+        </section>
+        <button class="main__btn" id="main__btn" onclick="playVideo()">Haz clic para darle sonido al video
+            <i class="bi bi-volume-up-fill"></i>
+        </button>
+        <a class="main__icon" href="#content">
+            <i class="bi bi-chevron-double-down"></i>
+        </a>
+        <a target="_blank" class="main__message"
+            href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">
+            <img class="message__img" src="./media/imagenes/message.png" alt="Unete a nuestra comunidad de whatsapp">
+        </a>
+
+
+    </main>
+
+    <section id="content" class="content">
+        <h2 class="">Menú</h2>
+    </section>
     <section>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, recusandae fugit. Asperiores optio facere
+            commodi sed ipsum, excepturi, porro quae temporibus possimus enim exercitationem dolore nam autem aliquam
+            minus minima. </p>
     </section>
     <section>
 
@@ -116,12 +144,30 @@
     </footer>
 </body>
 <script>
+    // sonido para el video 
     function playVideo() {
-        // busca al video 
         const video = document.getElementById('video');
-        video.muted = false;  // Asegura que no esté silenciado
-        video.play();  // Inicia la reproducción del video
+        const button = document.getElementById('main__btn');
+        // Alterna el estado de mute
+        video.muted = !video.muted;
+        // Actualiza el contenido del botón usando HTML directamente
+        if (video.muted) {
+            button.innerHTML = 'Haz clic para darle sonido al video <i class="bi bi-volume-mute-fill"></i>';
+        } else {
+            button.innerHTML = 'Haz clic para quitar el sonido del video <i class="bi bi-volume-up-fill"></i>';
+        }
+        // Asegura que el video esté reproduciéndose
+        if (video.paused) {
+            video.play();
+        }
     }
+    // cerrar aviso 
+    document.getElementById("cerrar").addEventListener("click", function (event) {
+        // Evita que el enlace recargue la página
+        event.preventDefault(); 
+        document.getElementById("aviso").style.display = "none";
+    });
+
 </script>
 
 </html>
