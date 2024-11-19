@@ -220,18 +220,32 @@
     text-align: center;
 }
 .content{
-    background-color: yellow;
+    background-color: #F1D7C6;
+}
+.content__text{
+    padding: 1rem 4rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    width: max-content;
+    margin: auto;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.content__text-title{
+    font-size: 32px;
 }
 
 
-/* estilos prueba  */
-
-
+/* estilos menu prueba */
 .batidos-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
-    gap: 20px; /* Espacio entre las tarjetas */
-    padding: 20px; /* Espacio alrededor de la grilla */
+    /* Crea 4 columnas de igual tamaño */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 40px;
 }
 
 .card {
@@ -246,16 +260,16 @@
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width: 100%;        /* Hace que la imagen ocupe el ancho del contenedor */
+    height: 200px;      /* Establece una altura fija para todas las imágenes */
     border-radius: 4px;
-    object-fit: cover;
+    object-fit: cover;  /* Asegura que las imágenes no se deformen */
 }
 
 .card h3 {
     margin: 12px 0 8px;
     font-size: 1.2rem;
-    color: #333;
+    color: black;
 }
 
 .card p {
