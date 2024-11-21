@@ -28,6 +28,7 @@ body{
     background-position: center;
     z-index: 1;
     padding: 0 2rem;
+    position: relative;
 }
 .logo{
     width: 90px;
@@ -93,40 +94,64 @@ body{
     color: yellow;
 }
 
-
-/* - - - - ESTILOS CONTENIDO PRINCIPAL - - -  */
-
-.content__title{
-    height: 100%;
-    /* background-color: red; */
+/* ----- ESTILOS MAIN ------  */
+.main{
+    background-color: #6F4F28;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    /* cafe : #6F4F28 */
+    /* amarillo : #F1C232 */
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px black;
+    
+}
+.main__section{
+    width: 100%;
+    height: 500px;
+    max-width: 850px;
+    overflow: hidden;
     position: relative;
+    
+}
+.main__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    object-position: top;
+    border-radius: 10px;
+    background-color: #06AB7B;
+    
+    
+    
+}
+.main__text{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: .8rem;
-    color:white;
+    /* text-align: center; */
+    gap: 1rem;
+}
+.main__title{
+   font-size: 3rem;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+   letter-spacing: 1px;
+}
+.main__parrafo{
+    color: #F1C232;
+}
+
+/* TITULO PRODUCTOS  */
+.title{
     text-align: center;
-}
-.content__title-h2{
- font-size: 2rem;
-}
-.content{
-    background-color: #F1D7C6;
-}
-.content__text{
-    padding: 1rem 4rem;
-    background-color: white;
-    text-align: center;
-    border-radius: 25px;
-    margin: auto;
-    box-shadow: 2px 2px 2px black;
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-}
-.content__text-title{
-    font-size: 2rem;
+    color: white;
+    font-size: 4rem;
     text-shadow: 2px 2px 5px #06AB7B;
 }
 /* ---- ESTILOS GRILLA DE CATEGORIAS*/
@@ -141,7 +166,6 @@ body{
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -152,7 +176,7 @@ body{
     position: relative;
     width: 100%;
 }
-.card__section-img {
+.card__section--img {
     width: 100%;
     height: 400px;
     border-radius: 8px;
@@ -160,12 +184,12 @@ body{
     object-fit: cover; 
     transition: transform 0.3s ease;
 }
-.card__section-img:hover{
+.card__section--img:hover{
     /* Escala la imagen al pasar el cursor */
     transform: scale(1.1);
     filter: brightness(0.85);
 }
-.card__section-a{
+.card__section--a{
     text-decoration: none;
     position: absolute;
     top: 50%;
@@ -181,25 +205,30 @@ body{
     opacity: 0; 
     transition: opacity 0.8s ease;
 }
-.card__section-a:hover{
+.card__section--a:hover{
     color: #06AB7B;
     background-color: white;
 }
-.card__section:hover .card__section-a{
+.card__section:hover .card__section--a{
     /* Muestra el botón al hacer hover */
     opacity: 1; 
     /* Habilita la interacción */
     pointer-events: auto; 
 }
+.card__section--neverita-icon{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
 .card__text{
     padding: 1rem;
 }
-.card__text-title{
+.card__text--title{
     padding: .5rem 0 .5rem;
     font-size: 1.2rem;
     color: black;
 }
-.card__text-parrafo{
+.card__text--parrafo{
     font-size: 1rem;
     color: #666;
 }
