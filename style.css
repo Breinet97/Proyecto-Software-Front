@@ -24,8 +24,8 @@ html {
     z-index: 1;
 }
 .logo{
-    width: 90px;
-    height: 90px;
+    max-width: 90px;
+    max-height: 90px;
 }
 .menu__list{
     display: flex;
@@ -251,6 +251,7 @@ html {
 }
 .content__text-title{
     font-size: 2rem;
+    text-shadow: 2px 2px 5px #06AB7B;
 }
 /* ---- ESTILOS GRILLA DE CATEGORIAS*/
 .batidos__grid {
