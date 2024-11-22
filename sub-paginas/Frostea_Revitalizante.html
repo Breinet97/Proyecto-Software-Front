@@ -1,111 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frostea Revitalizante</title>
 
-     <!-- estilo css pagina principal  -->
-     <link rel="stylesheet" href="../sub-paginas-style/frostea_Revitalizante.css">
+    <!-- estilos generales  -->
+    <link rel="stylesheet" href="../general-pagina-style/general.css">
+    <!-- estilo css pagina principal  -->
+    <link rel="stylesheet" href="../sub-paginas-style/frostea_Revitalizante.css">
     <!-- iconos boostrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
+
 <body>
-        <!-- head  -->
-        <header class="header">
-            <a href="../index.html">
-                <img class="logo" src="../media/imagenes/logo.png" alt="logo s´for you nutrition">
+    <!-- head  -->
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../media/imagenes/logo.png" alt="logo s´for you nutrition">
+        </a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__option">
+                    <a class="menu__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="#content__menu">Menú
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./protein_shake.html">Protein Shake</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="#">Frostea Revitalizante</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./beauty_Booster.html">Beauty Booster</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./protein_Ice_Coffee.html">Protein Ice Coffee</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./hot_Protein_Coffee.html">Hot Protein Coffee</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./hot_Tea.html">Hot Tea</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="">Waffles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="">Nosotros
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="">Comunidad</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="">Nuestro Reto</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="">Nuestro FitCamp</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="">Sistema De Puntos</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="">Realizar Pedido
+                        <i class="bi bi-cup-straw"></i>
+                    </a>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="">Neverita
+                        <i class="bi bi-basket2"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="social-media">
+            <a href="https://www.instagram.com/sforyounutrition?igsh=MXRwd3ZlYzlvZzBkNA==">
+                <i class="bi bi-instagram social-media__icon"></i>
             </a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__option">
-                        <a class="menu__link" href="#">Inicio</a>
-                    </li>
-                    <li class="menu__option">
-                        <a class="menu__link" href="#content__menu">Menú
-                            <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="./sub-paginas/protein_shake.html">Protein Shake</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="./sub-paginas/frostea_Revitalizante.html">Frostea Revitalizante</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Beauty Booster</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Protein Ice Coffee</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Hot Protein Coffee</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Hot Tea</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Waffles</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__option">
-                        <a class="menu__link" href="">Nosotros
-                            <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Comunidad</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Nuestro Reto</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Nuestro FitCamp</a>
-                            </li>
-                            <li class="menu__option submenu__option">
-                                <a class="menu__link" href="">Sistema De Puntos</a>
-                            </li>
-    
-                        </ul>
-                    </li>
-                    <li class="menu__option">
-                        <a class="menu__link" href="">Realizar Pedido
-                            <i class="bi bi-cup-straw"></i>
-                        </a>
-                    </li>
-                    <li class="menu__option">
-                        <a class="menu__link" href="">Neverita
-                            <i class="bi bi-basket2"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <section class="social-media">
-                <a href="https://www.instagram.com/sforyounutrition?igsh=MXRwd3ZlYzlvZzBkNA==">
-                    <i class="bi bi-instagram social-media__icon"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-facebook social-media__icon"></i>
-                </a>
-                <a
-                    href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">
-                    <i class="bi bi-whatsapp social-media__icon"></i>
-                </a>
-            </section>
-        </header>
+            <a href="#">
+                <i class="bi bi-facebook social-media__icon"></i>
+            </a>
+            <a
+                href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">
+                <i class="bi bi-whatsapp social-media__icon"></i>
+            </a>
+        </section>
+    </header>
     <!-- Fin head  -->
 
     <!-- INICIO CONTENIDO  -->
     <main class="main">
         <section class="main__section">
-            <img class="main__img" src="../media/imagenes/batidos/Protein_shake.jpeg" alt="Protein Shake">
+            <img class="main__img" src="../media/imagenes/batidos/Frostea_revitalizante.jpeg"
+                alt="Frostea Revitalizante">
         </section>
         <section class="main__text">
-            <h1 class="main__title">Protein Shake</h1>
-            <p class="main__parrafo">Malteadas en agua tienen proteinam vitaminas, nutrientes, fibra y son bajas en
-                calorias.</p>
+            <h1 class="main__title">Frostea Revitalizante</h1>
+
+            <p class="main__parrafo">Bebida con té verde, té negro, aloe vera, proteina, vitaminas, colágeno, biotiná y
+                extracto de guaraná.</p>
             <p>Las malteadas en agua son una opción deliciosa y saludable, ricas en proteínas, vitaminas, y nutrientes
                 esenciales para tu bienestar. Además, contienen fibra que favorece la digestión y te ayuda a sentirte
                 lleno por más tiempo.</p>
@@ -122,7 +128,8 @@
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Protein_shake/Cheescake_de_Frutos_Rojos.jpeg" alt="Cheescake de Frutos Rojos">
+                    src="../media/imagenes/batidos/productos_Protein_shake/Cheescake_de_Frutos_Rojos.jpeg"
+                    alt="Cheescake de Frutos Rojos">
                 <a class="card__section--a" href="">Comprar!!!</a>
                 <section class="card__section--neverita">
                     <a class="card__section--neverita-icon" href="">
@@ -143,7 +150,7 @@
                 </section>
             </section>
         </section>
-        
+
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
@@ -168,7 +175,7 @@
                 </section>
             </section>
         </section>
-        
+
 
 
         <section class="batidos__card">
@@ -199,7 +206,8 @@
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Protein_shake/Naranja_lenguetazos.jpeg" alt="Naranja Lenguetazos">
+                    src="../media/imagenes/batidos/productos_Protein_shake/Naranja_lenguetazos.jpeg"
+                    alt="Naranja Lenguetazos">
                 <a class="card__section--a" href="">Comprar!!!</a>
                 <section class="card__section--neverita">
                     <a class="card__section--neverita-icon" href="">
@@ -224,7 +232,8 @@
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Protein_shake/Vainilla_Arándanos_Guau.jpeg" alt="Vainilla Arándanos Guau">
+                    src="../media/imagenes/batidos/productos_Protein_shake/Vainilla_Arándanos_Guau.jpeg"
+                    alt="Vainilla Arándanos Guau">
                 <a class="card__section--a" href="">Comprar!!!</a>
                 <section class="card__section--neverita">
                     <a class="card__section--neverita-icon" href="">
@@ -250,7 +259,8 @@
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Protein_shake/Pie_de_limón_Huellitas.jpeg" alt="Pie de limón Huellitas">
+                    src="../media/imagenes/batidos/productos_Protein_shake/Pie_de_limón_Huellitas.jpeg"
+                    alt="Pie de limón Huellitas">
                 <a class="card__section--a" href="">Comprar!!!</a>
                 <section class="card__section--neverita">
                     <a class="card__section--neverita-icon" href="">
@@ -275,7 +285,8 @@
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Protein_shake/Vainilla_Francesa_Dog_lover.jpeg" alt="Pie de limón Huellitas">
+                    src="../media/imagenes/batidos/productos_Protein_shake/Vainilla_Francesa_Dog_lover.jpeg"
+                    alt="Pie de limón Huellitas">
                 <a class="card__section--a" href="">Comprar!!!</a>
                 <section class="card__section--neverita">
                     <a class="card__section--neverita-icon" href="">
@@ -301,7 +312,8 @@
         <section class="batidos__card">
             <section class="card__section">
                 <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Protein_shake/Rollo_de_canela_Minino.jpeg" alt="Pie de limón Huellitas">
+                    src="../media/imagenes/batidos/productos_Protein_shake/Rollo_de_canela_Minino.jpeg"
+                    alt="Pie de limón Huellitas">
                 <a class="card__section--a" href="">Comprar!!!</a>
                 <section class="card__section--neverita">
                     <a class="card__section--neverita-icon" href="">
@@ -387,4 +399,5 @@
     </footer>
 
 </body>
+
 </html>
