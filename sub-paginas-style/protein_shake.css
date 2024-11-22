@@ -215,10 +215,21 @@ body{
     /* Habilita la interacción */
     pointer-events: auto; 
 }
-.card__section--neverita-icon{
+.card__section--neverita{
     position: absolute;
     top: 5%;
     right: 3%;
+    background-color: #06AB7B;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__section--neverita-icon{
+    color: white;
+    font-size: 1.2rem;
 }
 .card__text{
     padding: 1rem;
@@ -230,5 +241,136 @@ body{
 }
 .card__text--parrafo{
     font-size: 1rem;
+    color: #666;
+}
+.card__opcion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8rem;
+}
+.card__section--compra {
+    background-color: #28a745; /* Verde (color para la compra) */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card__section--compra:hover {
+    background-color: #06AB7B; 
+    /* Efecto de hover */
+    transform: translateY(-2px); 
+}
+
+.card__section--neverita-icon {
+    background-color: #6c757d; /* Gris (para la neverita, color neutro) */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* Espaciado entre texto e ícono */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card__section--neverita-icon:hover {
+    background-color: #6F4F28; 
+    transform: translateY(-2px);
+}
+
+.card__section--neverita-icon i {
+    font-size: 1.2rem;
+}
+
+/* - - - - - - - ESTILOS PIE DE PAGINA - - - - - -   */
+/* Bloque principal */
+.footer {
+    background-color: #F1D7C6;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.footer__content{
+    background-color: #06AB7B;
+    padding: 1rem 0;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background: url(../media/imagenes/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__title {
+    font-size: 2rem;
+    padding: 3rem 0 0 0 ;
+    color: white;
+}
+.footer__description {
+    padding: .7rem 0 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.footer__nav {
+    padding: 1rem 0 0 0;
+}
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+.footer__link:hover {
+    color: yellow;
+}
+.footer__social {
+    margin: 20px 0;
+}
+.footer__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.footer__social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer__social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+.footer__social-link:hover {
+    color: yellow;
+}
+.footer__copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
     color: #666;
 }
