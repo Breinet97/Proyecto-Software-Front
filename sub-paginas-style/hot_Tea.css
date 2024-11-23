@@ -1,6 +1,6 @@
 /* ----- ESTILOS MAIN ------  */
 .main{
-    background-color: #F1C232;
+    background-color: #F4C2C2;
     margin: 2rem;
     padding: 2rem;
     display: flex;
@@ -20,6 +20,9 @@
     max-width: 850px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .main__img{
@@ -44,11 +47,11 @@
    letter-spacing: 1px;
 }
 .main__parrafo{
-    color: #6F4F28;
+    color: #666;
 }
 .main__parrafo-bold{
     font-weight: bold;
-    color: #6F4F28;
+    color: #666;
 }
 
 /* TITULO PRODUCTOS  */
@@ -86,6 +89,7 @@
     border-radius: 8px;
     /* Asegura que las imágenes no se deformen */
     object-fit: cover; 
+ 
     transition: transform 0.3s ease;
 }
 .card__section--img:hover{

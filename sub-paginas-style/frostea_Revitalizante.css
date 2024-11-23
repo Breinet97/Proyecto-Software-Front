@@ -27,7 +27,6 @@
     height: 100%;
     object-fit: cover;
     /* object-fit: contain; */
-    object-position: top;
     border-radius: 10px;
     background-color: #06AB7B;
 }
@@ -152,6 +151,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: .8rem;
 }
 .card__section--compra {

@@ -150,6 +150,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: .8rem;
 }
 .card__section--compra {

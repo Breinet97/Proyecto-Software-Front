@@ -1,6 +1,6 @@
 /* ----- ESTILOS MAIN ------  */
 .main{
-    background-color: #F1C232;
+    background-color: #3A6B8C;
     margin: 2rem;
     padding: 2rem;
     display: flex;
@@ -12,7 +12,6 @@
     /* amarillo : #F1C232 */
     border-radius: 15px;
     box-shadow: 4px 4px 4px black;
-    
 }
 .main__section{
     width: 100%;
@@ -20,13 +19,13 @@
     max-width: 850px;
     overflow: hidden;
     position: relative;
-    
 }
 .main__img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     /* object-fit: contain; */
+    object-position: top;
     border-radius: 10px;
     background-color: #06AB7B;
 }
@@ -44,11 +43,12 @@
    letter-spacing: 1px;
 }
 .main__parrafo{
-    color: #6F4F28;
+    color: #F1C232;
+    
 }
 .main__parrafo-bold{
     font-weight: bold;
-    color: #6F4F28;
+    color: #F1C232;
 }
 
 /* TITULO PRODUCTOS  */
@@ -137,6 +137,7 @@
 }
 .card__text{
     padding: 1rem;
+    max-width: 100%;
 }
 .card__text--title{
     padding: .5rem 0 .5rem;
@@ -197,3 +198,4 @@
 .card__section--neverita-icon i {
     font-size: 1.2rem;
 }
+

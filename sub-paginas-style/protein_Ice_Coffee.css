@@ -1,6 +1,7 @@
 /* ----- ESTILOS MAIN ------  */
 .main{
-    background-color: #D3D3D3;
+    /* background-color: #D3D3D3; */
+    background-color: #C5A588;
     margin: 2rem;
     padding: 2rem;
     display: flex;
@@ -27,7 +28,6 @@
     height: 100%;
     object-fit: cover;
     /* object-fit: contain; */
-    object-position: top;
     border-radius: 10px;
     background-color: #06AB7B;
 }
@@ -152,6 +152,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: .8rem;
 }
 .card__section--compra {
