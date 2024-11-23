@@ -47,6 +47,10 @@
 .main__parrafo{
     color: #6F4F28;
 }
+.main__parrafo-bold{
+    font-weight: bold;
+    color: #6F4F28;
+}
 
 /* TITULO PRODUCTOS  */
 .title{

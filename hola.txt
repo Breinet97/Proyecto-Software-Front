@@ -1,82 +1,20 @@
-<section class="batidos-grid">
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante.jpg" alt="Batido de Fresa">
-                <h3>Batido de Fresa</h3>
-                <p>Delicioso batido de fresa con un toque cremoso.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 2.jpg" alt="Batido de Chocolate">
-                <h3>Batido de Chocolate</h3>
-                <p>Un batido de chocolate intenso y suave.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 3.jpeg" alt="Batido de Mango">
-                <h3>Batido de Mango</h3>
-                <p>Fresco batido de mango tropical.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 4.jpeg" alt="Batido Verde">
-                <h3>Batido Verde</h3>
-                <p>Batido saludable con espinacas y manzana.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante.jpg" alt="Batido de Fresa">
-                <h3>Batido de Fresa</h3>
-                <p>Delicioso batido de fresa con un toque cremoso.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 2.jpg" alt="Batido de Chocolate">
-                <h3>Batido de Chocolate</h3>
-                <p>Un batido de chocolate intenso y suave.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 3.jpeg" alt="Batido de Mango">
-                <h3>Batido de Mango</h3>
-                <p>Fresco batido de mango tropical.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 4.jpeg" alt="Batido Verde">
-                <h3>Batido Verde</h3>
-                <p>Batido saludable con espinacas y manzana.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante.jpg" alt="Batido de Fresa">
-                <h3>Batido de Fresa</h3>
-                <p>Delicioso batido de fresa con un toque cremoso.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 2.jpg" alt="Batido de Chocolate">
-                <h3>Batido de Chocolate</h3>
-                <p>Un batido de chocolate intenso y suave.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 3.jpeg" alt="Batido de Mango">
-                <h3>Batido de Mango</h3>
-                <p>Fresco batido de mango tropical.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 4.jpeg" alt="Batido Verde">
-                <h3>Batido Verde</h3>
-                <p>Batido saludable con espinacas y manzana.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante.jpg" alt="Batido de Fresa">
-                <h3>Batido de Fresa</h3>
-                <p>Delicioso batido de fresa con un toque cremoso.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 2.jpg" alt="Batido de Chocolate">
-                <h3>Batido de Chocolate</h3>
-                <p>Un batido de chocolate intenso y suave.</p>
-            </section>
-            <sectionclass="card">
-                <img src="./media/imagenes/batidos/batido refrescante 3.jpeg" alt="Batido de Mango">
-                <h3>Batido de Mango</h3>
-                <p>Fresco batido de mango tropical.</p>
-            </section>
-            <section class="card">
-                <img src="./media/imagenes/batidos/batido refrescante 4.jpeg" alt="Batido Verde">
-                <h3>Batido Verde</h3>
-                <p>Batido saludable con espinacas y manzana.</p>
-            </section>
-        </section>
+Colores neutros :
+
+Gris claro (#D3D3D3): Complementa bien los tonos cálidos y ofrece un equilibrio suave.
+Beige (#F5F5DC): Proporciona una base cálida y neutra que armoniza con el color marrón y amarillo.
+Colores pastel :
+
+Rosa pastel (#FAD0C9): Suave y cálido, complementa el verde y el marrón.
+Lavanda (#E6E6FA): Aporta frescura y un contraste sutil sin ser demasiado chocante.
+Colores complementarios :
+
+Azul turquesa (#30D5C8): Este tono resalta bien junto al verde (#06AB7B), creando un contraste vibrante y armonioso.
+Naranja suave (#FF7F50): Un color cálido que hace juego con el amarillo (#F1C232) y el marrón (#6F4F28), creando una combinación energética.
+Colores tierra y madera :
+
+Marrón oscuro (#3E2723): Resalta el tono marrón original (#6F4F28) y agrega profundidad.
+Terracota (#E27D60): Un tono rojizo cálido que puede complementar muy bien con el verde y amarill
+Colores metálicos :
+
+Dorado (#FFD700): El dorado combina con el amarillo (#F1C232) para una sensación
+Bronce 

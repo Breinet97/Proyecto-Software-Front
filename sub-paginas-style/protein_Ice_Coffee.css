@@ -1,6 +1,6 @@
 /* ----- ESTILOS MAIN ------  */
 .main{
-    background-color: #6F4F28;
+    background-color: #D3D3D3;
     margin: 2rem;
     padding: 2rem;
     display: flex;
@@ -12,6 +12,7 @@
     /* amarillo : #F1C232 */
     border-radius: 15px;
     box-shadow: 4px 4px 4px black;
+    
 }
 .main__section{
     width: 100%;
@@ -19,6 +20,7 @@
     max-width: 850px;
     overflow: hidden;
     position: relative;
+    
 }
 .main__img{
     width: 100%;
@@ -43,11 +45,11 @@
    letter-spacing: 1px;
 }
 .main__parrafo{
-    color: #F1C232;
+    color: #6F4F28;
 }
 .main__parrafo-bold{
     font-weight: bold;
-    color: #F1C232;
+    color: #6F4F28;
 }
 
 /* TITULO PRODUCTOS  */
@@ -194,4 +196,3 @@
 .card__section--neverita-icon i {
     font-size: 1.2rem;
 }
-
