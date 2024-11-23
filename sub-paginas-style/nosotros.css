@@ -1,139 +1,158 @@
-/* Estilos generales */
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
-.footer{
-    background-color: white;
+.main{
+  animation: slideUp 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+.content {
+  margin: 1rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px #06AB7B;
+  text-align: center;
+}
+.about__title{
+  font-size: 2rem;
+  color: #1A3A5F;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+  
+}
+.about__title:hover{
+  color: #28c97f;
+}
+.parrafo {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+.about {
+  width: 100%;
+  /* background-color: #F1D7C6; */
+  background-color: #C6D9F1;
+  border-left: 10px solid #1A3A5F;
+  box-shadow: 2px 2px 2px #1A3A5F;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.about__img {
+  width: 40%;
+  border-radius: 5px;
+}
+.reto {
+  width: 100%;
+  background-color: #C6D9F1;
+  border-left: 10px solid #1A3A5F;
+  box-shadow: 2px 2px 2px #1A3A5F;
+  border-radius: 15px;
+  padding: 2rem;
+}
+.reto__title{
+  font-size: 2rem;
+  color: #1A3A5F;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+.reto__title:hover{
+  color: #28c97f;
+}
+.reto__parrafo{
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+.reto__img{
+  width: 20%;
+}
+.camp {
+  width: 100%;
+  background-color: #C6D9F1;
+  border-right: 10px solid #1A3A5F;
+  box-shadow: 2px 2px 2px #1A3A5F;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.camp__content{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+}
+.camp__title{
+  font-size: 2rem;
+  color: #1A3A5F;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+.camp__title:hover{
+  color: #28c97f;
+}
+.camp__parrafo{
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: end;
+}
+.camp__img{
+  width: 30%;
+  border-radius: 5px;
+}
+.camp__a{
+  padding: 1.5rem;
+  text-decoration: none;
+  background-color: #06ab7c;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.camp__a:hover{
+  background-color: #F1C232;
+  
+  transform: translateY(-2px); 
 }
 
-.content{
-    margin: 1rem;
-    font-size: 2rem;
-    text-shadow: 2px 2px 5px #06AB7B;
+.points {
+  width: 100%;
+  background-color: #C6D9F1;
+  border-right: 10px solid #1A3A5F;
+  box-shadow: 2px 2px 2px #1A3A5F;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-  }
-  
-  h1, h2 {
-    color: #333;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    text-align: center;
-    line-height: 1.6;
-    font-size: 1.1rem;
-  }
-  
-  /* Secciones */
-  section {
-    padding: 40px 0;
-    margin-bottom: 30px;
-    animation: slideUp 0.8s ease-out;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-    color: #1e9f85;
-    margin-bottom: 15px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  section:hover h2 {
-    color: #28c97f;
-  }
-  
-  section p {
-    font-size: 1rem;
-  }
-  
-  .cta-btn {
-    display: inline-block;
-    background-color: #1e9f85;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .cta-btn:hover {
-    background-color: #28c97f;
-  }
-  
-  /* Fondo y diseño de secciones */
-  .challenge, .fitcamp, .points-system {
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .challenge {
-    border-left: 5px solid #1e9f85;
-  }
-  
-  .fitcamp {
-    border-left: 5px solid #e54d44;
-  }
-  
-  .points-system {
-    border-left: 5px solid #ffb84d;
-  }
-  
-  /* Animaciones */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideUp {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .container {
-      width: 95%;
-      padding: 20px 0;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    h2 {
-      font-size: 1.8rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  
-    .cta-btn {
-      font-size: 0.9rem;
-      padding: 10px 20px;
-    }
-  }
-  
+.points__title{
+  font-size: 2rem;
+  color: #1A3A5F;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+.points__title:hover{
+  color: #28c97f;
+}
+.points__parrafo{
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: end;
+  padding-right: 1rem;
+  border-right: 5px solid #1A3A5F;
+}
+.footer {
+  background-color: white;
+}

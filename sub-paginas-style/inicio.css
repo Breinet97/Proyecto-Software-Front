@@ -1,0 +1,138 @@
+/* Estilos globales */
+body {
+    background: url(../media/imagenes/login/fondo_pet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+.login {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(6, 171, 124, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 15px rgba(26, 58, 95, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    animation: fadeIn 1s ease-out;
+}
+.login__title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.login__title:hover {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    transform: scale(1.1);
+}
+/* Botones de selección (Cliente/Administrativo) */
+.login__role-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.login__btn-cliente {
+    background-color: #06ab7c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login__btn-administrativo {
+    background-color: #F1C232;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login__btn:hover {
+    background-color: #28c97f;
+}
+
+.form__label {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form__input:focus {
+    border-color: #1A3A5F;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+.form__btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #06ab7c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form__btn:hover {
+    background-color: #28c97f;
+    transform: translateY(-3px);
+}
+
+.form__btn:active {
+    transform: translateY(0);
+}
+
+.form__registro {
+    margin-top: 1rem;
+}
+
+.form__link {
+    color: #1A3A5F;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
