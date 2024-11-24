@@ -18,3 +18,41 @@ Colores metálicos :
 
 Dorado (#FFD700): El dorado combina con el amarillo (#F1C232) para una sensación
 Bronce 
+
+
+
+<section class="cart container">
+    <h2>Tu Neverita</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Batido Tropical</td>
+          <td>2</td>
+          <td>$5.00</td>
+          <td>$10.00</td>
+          <td><button class="remove-btn">Eliminar</button></td>
+        </tr>
+        <tr>
+          <td>Batido Proteico</td>
+          <td>1</td>
+          <td>$6.00</td>
+          <td>$6.00</td>
+          <td><button class="remove-btn">Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total">
+      <p><strong>Total: $16.00</strong></p>
+      <button class="cta-btn">Finalizar Pedido</button>
+    </div>
+  </section>

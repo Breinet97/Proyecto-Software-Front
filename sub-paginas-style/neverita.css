@@ -1,0 +1,122 @@
+.main {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #06ab7caf;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrito */
+.cart__title {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cart__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.cart__table-header {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.cart__table-body td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cart__table-body .removing {
+    animation: slideOut 0.5s forwards;
+}
+
+.cart__summary {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.cart__total {
+    margin: 0.5rem 0;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.cart__cta-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn 0.8s ease-out;
+}
+.cart__cta-btn:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+.cart__hint {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+.cart__continue-shopping {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.cart__continue-shopping:hover {
+    animation: bounce 0.5s ease-in-out;
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}

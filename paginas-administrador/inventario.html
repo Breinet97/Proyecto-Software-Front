@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
+    <title>Inventario</title>
     <link rel="stylesheet" href="../general-pagina-style/general.css">
     <!-- estilo css pagina principal  -->
-    <link rel="stylesheet" href="../sub-paginas-style/inicio.css">
+    <!-- <link rel="stylesheet" href="../sub-paginas-style/inicio.css"> -->
     <!-- iconos boostrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -105,42 +105,9 @@
     </header>
     <!-- Fin head  -->
 
-    <!-- Formulario INICIO -->
+    <!-- MAIN -->
     <main class="main">
-        <section class="login">
-            <h2 class="login__title">Iniciar Sesión</h2>
-
-            <!-- Opción para elegir tipo de cuenta -->
-            <section class="login__role-selection">
-                <button id="clientBtn" class="login__btn-cliente">Iniciar como Cliente</button>
-                <button id="adminBtn" class="login__btn-administrativo">Iniciar como Administrativo</button>
-            </section>
-
-            <!-- Formulario para Cliente -->
-            <form class="form" action="#" method="POST" id="loginFormCliente" style="display:none;">
-                <label for="emailCliente" class="form__label">Correo Electrónico:</label>
-                <input type="email" id="emailCliente" name="email" class="form__input" required>
-
-                <label for="passwordCliente" class="form__label">Contraseña:</label>
-                <input type="password" id="passwordCliente" name="password" class="form__input" required>
-
-                <button type="submit" class="form__btn">Iniciar Sesión como Cliente</button>
-            </form>
-
-            <!-- Formulario para Administrador -->
-            <form class="form" action="#" method="POST" id="loginFormAdmin" style="display:none;">
-                <label for="emailAdmin" class="form__label">Correo Electrónico:</label>
-                <input type="email" id="emailAdmin" name="email" class="form__input" required>
-
-                <label for="passwordAdmin" class="form__label">Contraseña:</label>
-                <input type="password" id="passwordAdmin" name="password" class="form__input" required>
-
-                <button type="submit" class="form__btn">Iniciar Sesión como Administrativo</button>
-            </form>
-            <p class="form__registro">¿No tienes cuenta?
-                <a class="form__link" href="./registro.html">Regístrate aquí</a>
-            </p>
-        </section>
+        
     </main>
 
     <!-- INICIO FOOTER  -->
@@ -202,18 +169,6 @@
     </footer>
 
     <script>
-        // Cambiar el formulario según el tipo de usuario seleccionado
-        document.getElementById('clientBtn').addEventListener('click', function () {
-            // Mostrar el formulario de Cliente
-            document.getElementById('loginFormCliente').style.display = 'block';
-            document.getElementById('loginFormAdmin').style.display = 'none';
-        });
-
-        document.getElementById('adminBtn').addEventListener('click', function () {
-            // Mostrar el formulario de Administrador
-            document.getElementById('loginFormAdmin').style.display = 'block';
-            document.getElementById('loginFormCliente').style.display = 'none';
-        });
     </script>
 
 </body>

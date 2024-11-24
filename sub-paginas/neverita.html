@@ -1,35 +1,199 @@
-<section class="cart container">
-    <h2>Tu Neverita</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Producto</th>
-          <th>Cantidad</th>
-          <th>Precio</th>
-          <th>Total</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Batido Tropical</td>
-          <td>2</td>
-          <td>$5.00</td>
-          <td>$10.00</td>
-          <td><button class="remove-btn">Eliminar</button></td>
-        </tr>
-        <tr>
-          <td>Batido Proteico</td>
-          <td>1</td>
-          <td>$6.00</td>
-          <td>$6.00</td>
-          <td><button class="remove-btn">Eliminar</button></td>
-        </tr>
-      </tbody>
-    </table>
+<!DOCTYPE html>
+<html lang="es">
 
-    <div class="total">
-      <p><strong>Total: $16.00</strong></p>
-      <button class="cta-btn">Finalizar Pedido</button>
-    </div>
-  </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neverita</title>
+    <link rel="stylesheet" href="../general-pagina-style/general.css">
+    <!-- estilo css pagina principal  -->
+    <link rel="stylesheet" href="../sub-paginas-style/neverita.css">
+    <!-- iconos boostrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- head  -->
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../media/imagenes/logo.png" alt="logo s´for you nutrition">
+        </a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__option">
+                    <a class="menu__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="../index.html#content__menu">Menú
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./protein_shake.html">Protein Shake</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./frostea_Revitalizante.html">Frostea Revitalizante</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./beauty_Booster.html">Beauty Booster</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./protein_Ice_Coffee.html">Protein Ice Coffee</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./hot_Protein_Coffee.html">Hot Protein Coffee</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./hot_Tea.html">Hot Tea</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./waffles.html">Waffles</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./snacks.html">Snacks</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="./nosotros.html">Nosotros
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link"
+                                href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">Comunidad
+                            </a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./inicio_sesion.html">Inicio Sesión</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./nosotros.html#reto">Nuestro Reto</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./nosotros.html#fitCamp">Nuestro FitCamp</a>
+                        </li>
+                        <li class="menu__option submenu__option">
+                            <a class="menu__link" href="./nosotros.html#points">Sistema De Puntos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="../index.html#content__menu">Realizar Pedido
+                        <i class="bi bi-cup-straw"></i>
+                    </a>
+                </li>
+                <li class="menu__option">
+                    <a class="menu__link" href="#">Neverita
+                        <i class="bi bi-basket2"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="social-media">
+            <a href="https://www.instagram.com/sforyounutrition?igsh=MXRwd3ZlYzlvZzBkNA==">
+                <i class="bi bi-instagram social-media__icon"></i>
+            </a>
+            <a href="https://www.facebook.com/people/S-For-You-Nutrition/100090551387841/">
+                <i class="bi bi-facebook social-media__icon"></i>
+            </a>
+            <a
+                href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">
+                <i class="bi bi-whatsapp social-media__icon"></i>
+            </a>
+        </section>
+    </header>
+    <!-- Fin head  -->
+
+    <!-- Neverita -->
+    <main class="main">
+        <section class="cart" id="neverita">
+          <h2 class="cart__title">Tu Neverita</h2>
+          <table class="cart__table">
+            <thead class="cart__table-head">
+              <tr>
+                <th class="cart__table-header">Producto</th>
+                <th class="cart__table-header">Cantidad</th>
+                <th class="cart__table-header">Precio</th>
+                <th class="cart__table-header">Total</th>
+                <th class="cart__table-header">Acciones</th>
+              </tr>
+            </thead>
+            <tbody class="cart__table-body">
+              <!-- Aquí se llenarán los productos dinámicamente -->
+            </tbody>
+          </table>
+          <section class="cart__summary">
+            <p class="cart__total"><strong>Total: $0.00</strong></p>
+            <button class="cart__cta-btn" disabled>Finalizar Pedido</button>
+            <p class="cart__hint">Añade productos para finalizar tu pedido.</p>
+            <a href="#productos" class="cart__continue-shopping">Seguir Comprando</a>
+          </section>
+        </section>
+      </main>
+      
+
+    <!-- INICIO FOOTER  -->
+    <footer class="footer">
+        <section class="footer__info">
+            <h2 class="footer__title">S'for You Nutrition</h2>
+            <p class="footer__description">Tu salud y bienestar son nuestra prioridad. Descubre nuestras bebidas y
+                alimentos nutritivos.</p>
+        </section>
+        <section class="footer__content">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Inicio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Menu</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Nosotros</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Realizar Pedido
+                            <i class="bi bi-cup-straw"></i>
+                        </a>
+
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Neverita
+                            <i class="bi bi-basket2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="footer__social">
+                <h3 class="footer__subtitle">Síguenos en:</h3>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">Facebook
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">Instagram
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">WhatsApp
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </section>
+            <p class="footer__copyright">&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
