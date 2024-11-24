@@ -109,20 +109,29 @@
       <form action="#" method="POST" class="register__form">
         <label for="nombre" class="register__label">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required class="register__input">
-  
+
         <label for="email" class="register__label">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required class="register__input">
-  
+
         <label for="contraseña" class="register__label">Contraseña:</label>
         <input type="password" id="contraseña" name="contraseña" required class="register__input">
-  
+
         <label for="rol" class="register__label">Selecciona tu Rol:</label>
         <select id="rol" name="rol" class="register__select">
           <option value="cliente">Cliente</option>
           <option value="administrador">Administrador</option>
         </select>
-  
+
+        <section id="codigo-admin-container" class="register__admin-code" style="display: none;">
+          <label for="codigo-admin" class="register__label">Código de Administrador:</label>
+          <input type="password" id="codigo-admin" name="codigo-admin" class="register__input">
+        </section>
+
         <button type="submit" class="register__cta-btn">Registrarse</button>
+
+        <p class="register__login">¿Ya tienes cuenta? 
+          <a class="register__link" href="./inicio_sesion.html">Inicia Sesión aquí</a>
+        </p>
       </form>
     </section>
   </main>
@@ -180,7 +189,6 @@
             <a href="#" class="footer__social-link">WhatsApp
               <i class="bi bi-whatsapp"></i>
             </a>
-
           </li>
         </ul>
       </section>
@@ -188,7 +196,18 @@
     </section>
   </footer>
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const rolSelect = document.getElementById("rol");
+      const adminCodeContainer = document.getElementById("codigo-admin-container");
 
+      rolSelect.addEventListener("change", () => {
+        if (rolSelect.value === "administrador") {
+          adminCodeContainer.style.display = "block";
+        } else {
+          adminCodeContainer.style.display = "none";
+        }
+      });
+    });
   </script>
 
 </body>

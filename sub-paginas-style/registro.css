@@ -78,6 +78,17 @@
     transform: translateY(0);
 }
 
+.register__login{
+    margin-top: 1rem;
+}
+.register__link{
+    color: #1A3A5F;
+    font-weight: bold;
+}
+
+
+
+
 /* Animación de entrada */
 @keyframes fadeIn {
     from {

@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Realizar Pedido</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../sub-paginas-style/realizar_pedido.css">
 </head>
-<body>
-  <section class="order container">
-    <h2>Realiza tu Pedido</h2>
-    <form action="#" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" required>
 
+<body>
+  <header class="header">
+    <a href="../index.html">
+      <img class="logo" src="../media/imagenes/logo.png" alt="Logo S'for You Nutrition">
+    </a>
+    <h1>Realiza tu Pedido</h1>
+  </header>
+
+  <main class="order container">
+    <h2>Completa tu información</h2>
+    <form action="#" method="POST" class="order-form">
+      <!-- Nombre -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+      <!-- Correo -->
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+      <!-- Selección de batido -->
       <label for="batido">Selecciona tu Batido:</label>
-      <select id="batido" name="batido">
+      <select id="batido" name="batido" required>
+        <option value="" disabled selected>Elige una opción</option>
         <option value="batido1">Batido Tropical</option>
         <option value="batido2">Batido Proteico</option>
         <option value="batido3">Batido Verde</option>
       </select>
 
+      <!-- Cantidad -->
       <label for="cantidad">Cantidad:</label>
-      <input type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+      <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10" required>
 
+      <!-- Notas adicionales -->
+      <label for="notas">Notas adicionales:</label>
+      <textarea id="notas" name="notas" placeholder="Escribe aquí cualquier indicación especial..."></textarea>
+
+      <!-- Botón para realizar el pedido -->
       <button type="submit" class="cta-btn">Realizar Pedido</button>
     </form>
-  </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
+  </footer>
 </body>
+
 </html>
