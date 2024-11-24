@@ -1,13 +1,7 @@
 /* Estilo general */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
+  background-color: #666;
+}
   /* Bloque principal: Sección del pedido */
   .order {
     max-width: 800px;

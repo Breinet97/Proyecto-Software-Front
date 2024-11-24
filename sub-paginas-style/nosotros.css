@@ -54,11 +54,24 @@ body {
   box-shadow: 2px 2px 2px #1A3A5F;
   border-radius: 15px;
   padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.reto__content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.reto__video{
+  width: 20%;
+  border-radius: 5px;
 }
 .reto__title{
   font-size: 2rem;
   color: #1A3A5F;
-  margin-bottom: 15px;
   transition: color 0.3s ease-in-out;
 }
 .reto__title:hover{
@@ -105,11 +118,16 @@ body {
   font-size: 1.1rem;
   text-align: end;
 }
+.camp__video{
+  width: 23%;
+  border-radius: 5px;
+}
 .camp__img{
   width: 30%;
   border-radius: 5px;
 }
 .camp__a{
+  text-align: center;
   padding: 1.5rem;
   text-decoration: none;
   background-color: #06ab7c;
@@ -131,27 +149,46 @@ body {
   border-radius: 15px;
   padding: 2rem;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.point{
+  display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
-.points__title{
+.point__title{
   font-size: 2rem;
   color: #1A3A5F;
   margin-bottom: 15px;
   transition: color 0.3s ease-in-out;
 }
-.points__title:hover{
+.point__title:hover{
   color: #28c97f;
 }
-.points__parrafo{
+.point__parrafo{
   color: #666;
   line-height: 1.6;
   font-size: 1.1rem;
   text-align: end;
   padding-right: 1rem;
   border-right: 5px solid #1A3A5F;
+}
+.point__a{
+  text-align: center;
+  width: 100%;
+  padding: 1.5rem;
+  text-decoration: none;
+  background-color: #06ab7c;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.point__a:hover{
+  background-color: #F1C232;
+  transform: translateY(-2px); 
 }
 .footer {
   background-color: white;

@@ -1,6 +1,10 @@
-
+body {
+    background: url(../media/imagenes/login/fondo_registro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .main{
-    
     padding: 2rem;
 }
 .register__form {
@@ -85,9 +89,9 @@
     color: #1A3A5F;
     font-weight: bold;
 }
-
-
-
+.footer{
+    background-color: transparent;
+}
 
 /* Animación de entrada */
 @keyframes fadeIn {
