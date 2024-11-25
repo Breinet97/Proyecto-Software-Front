@@ -1,0 +1,44 @@
+.main {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #06ab7caf;
+}
+
+/* Estilo de la sección de inventario */
+.inventory__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Tabla de inventario */
+.inventory__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inventory__thead {
+    background-color: #06ab7caf;
+}
+
+.inventory__row {
+    text-align: left;
+}
+
+.inventory__header,
+.inventory__data {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.inventory__header {
+    color: white;
+}
+
+.inventory__tbody tr:hover {
+    background-color: #f1f1f1;
+}

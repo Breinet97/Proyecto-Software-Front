@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes</title>
-    <link rel="stylesheet" href="../general-pagina-style/general.css">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="../../general-pagina-style/general.css">
     <!-- estilo css pagina principal  -->
-    <!-- <link rel="stylesheet" href="../sub-paginas-style/inicio.css"> -->
+    <link rel="stylesheet" href="../../sub-paginas-style/inventario.css">
     <!-- iconos boostrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -15,13 +15,13 @@
 <body>
     <!-- head  -->
     <header class="header">
-        <a href="../index.html">
-            <img class="logo" src="../media/imagenes/logo.png" alt="logo s´for you nutrition">
+        <a href="../../index.html">
+            <img class="logo" src="../../media/imagenes/logo.png" alt="logo s´for you nutrition">
         </a>
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__option">
-                    <a class="menu__link" href="../index.html">Inicio</a>
+                    <a class="menu__link" href="../../index.html">Inicio</a>
                 </li>
                 <li class="menu__option">
                     <a class="menu__link" href="#content__menu">Menú
@@ -29,33 +29,33 @@
                     </a>
                     <ul class="submenu">
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./protein_shake.html">Protein Shake</a>
+                            <a class="menu__link" href="../../protein_shake.html">Protein Shake</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./frostea_Revitalizante.html">Frostea Revitalizante</a>
+                            <a class="menu__link" href="../../frostea_Revitalizante.html">Frostea Revitalizante</a>
                         </li>
                         <li class="menu__option submenu__option">
                             <a class="menu__link" href="#">Beauty Booster</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./protein_Ice_Coffee.html">Protein Ice Coffee</a>
+                            <a class="menu__link" href="../../protein_Ice_Coffee.html">Protein Ice Coffee</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./hot_Protein_Coffee.html">Hot Protein Coffee</a>
+                            <a class="menu__link" href="../../hot_Protein_Coffee.html">Hot Protein Coffee</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./hot_Tea.html">Hot Tea</a>
+                            <a class="menu__link" href="../../hot_Tea.html">Hot Tea</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./waffles.html">Waffles</a>
+                            <a class="menu__link" href="../../waffles.html">Waffles</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./snacks.html">Snacks</a>
+                            <a class="menu__link" href="../../snacks.html">Snacks</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu__option">
-                    <a class="menu__link" href="./nosotros.html">Nosotros
+                    <a class="menu__link" href="../../nosotros.html">Nosotros
                         <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul class="submenu">
@@ -68,23 +68,23 @@
                             <a class="menu__link" href="#">Inicio Sesión</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./nosotros.html#reto">Nuestro Reto</a>
+                            <a class="menu__link" href="../../nosotros.html#reto">Nuestro Reto</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./nosotros.html#fitCamp">Nuestro FitCamp</a>
+                            <a class="menu__link" href="../../nosotros.html#fitCamp">Nuestro FitCamp</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./nosotros.html#points">Sistema De Puntos</a>
+                            <a class="menu__link" href="../../nosotros.html#points">Sistema De Puntos</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu__option">
-                    <a class="menu__link" href="../index.html#content__menu">Realizar Pedido
+                    <a class="menu__link" href="../../index.html#content__menu">Realizar Pedido
                         <i class="bi bi-cup-straw"></i>
                     </a>
                 </li>
                 <li class="menu__option">
-                    <a class="menu__link" href="./neverita.html">Neverita
+                    <a class="menu__link" href="../../neverita.html">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </li>
@@ -107,7 +107,25 @@
 
     <!-- MAIN -->
     <main class="main">
-        
+        <section class="inventory">
+            <h2 class="inventory__title">Reporte de Batidos Pedidos</h2>
+            <table class="inventory__table">
+                <thead class="inventory__thead">
+                    <tr class="inventory__row">
+                        <th class="inventory__header">Nombre</th>
+                        <th class="inventory__header">Cantidad</th>
+                        <th class="inventory__header">Precio</th>
+                        <th class="inventory__header">Total</th>
+                    </tr>
+                </thead>
+                <tbody class="inventory__tbody" id="cartDetailBody">
+                    <!-- Aquí se mostrarán los productos -->
+                </tbody>
+            </table>
+            <section class="inventory__total">
+                <p id="total">Total: $0</p>
+            </section>
+        </section>
     </main>
 
     <!-- INICIO FOOTER  -->
@@ -168,7 +186,7 @@
         </section>
     </footer>
 
-    <script>
+    <script src="../../script/inventario.js">
     </script>
 
 </body>

@@ -1,58 +1,33 @@
-Colores neutros :
+// // Limpiar el carrito en localStorage
+    // localStorage.removeItem('carrito');
 
-Gris claro (#D3D3D3): Complementa bien los tonos cálidos y ofrece un equilibrio suave.
-Beige (#F5F5DC): Proporciona una base cálida y neutra que armoniza con el color marrón y amarillo.
-Colores pastel :
+    // // Limpiar la vista del carrito
+    // const cartDetailBody = document.getElementById('cartDetailBody');
+    // cartDetailBody.innerHTML = '<tr><td colspan="4">Tu carrito está vacío.</td></tr>';
 
-Rosa pastel (#FAD0C9): Suave y cálido, complementa el verde y el marrón.
-Lavanda (#E6E6FA): Aporta frescura y un contraste sutil sin ser demasiado chocante.
-Colores complementarios :
+    // // Usar jsPDF para crear el PDF
+    // const { jsPDF } = window.jspdf;
+    // const doc = new jsPDF();
 
-Azul turquesa (#30D5C8): Este tono resalta bien junto al verde (#06AB7B), creando un contraste vibrante y armonioso.
-Naranja suave (#FF7F50): Un color cálido que hace juego con el amarillo (#F1C232) y el marrón (#6F4F28), creando una combinación energética.
-Colores tierra y madera :
+    // // Agregar título y fecha al reporte
+    // doc.text("Reporte de Pedido", 20, 20);
+    // doc.text("Fecha: " + new Date().toLocaleDateString(), 20, 30);
 
-Marrón oscuro (#3E2723): Resalta el tono marrón original (#6F4F28) y agrega profundidad.
-Terracota (#E27D60): Un tono rojizo cálido que puede complementar muy bien con el verde y amarill
-Colores metálicos :
+    // // Agregar los detalles del carrito
+    // let yPosition = 40;
+    // carrito.forEach((producto, index) => {
+    //     doc.text(`${index + 1}. ${producto.nombre} - $${producto.precio.toLocaleString()}`, 20, yPosition);
+    //     yPosition += 10;
+    // });
 
-Dorado (#FFD700): El dorado combina con el amarillo (#F1C232) para una sensación
-Bronce 
+    // // Calcular el total
+    // const total = carrito.reduce((sum, producto) => sum + producto.precio, 0);
+    // doc.text(`Total: $${total.toLocaleString()}`, 20, yPosition);
 
+    // // Descargar el reporte como PDF
+    // doc.save('reporte_pedido.pdf');
 
-
-<section class="cart container">
-    <h2>Tu Neverita</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Producto</th>
-          <th>Cantidad</th>
-          <th>Precio</th>
-          <th>Total</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Batido Tropical</td>
-          <td>2</td>
-          <td>$5.00</td>
-          <td>$10.00</td>
-          <td><button class="remove-btn">Eliminar</button></td>
-        </tr>
-        <tr>
-          <td>Batido Proteico</td>
-          <td>1</td>
-          <td>$6.00</td>
-          <td>$6.00</td>
-          <td><button class="remove-btn">Eliminar</button></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="total">
-      <p><strong>Total: $16.00</strong></p>
-      <button class="cta-btn">Finalizar Pedido</button>
-    </div>
-  </section>
+    // // Ocultar el mensaje después de 3 segundos
+    // setTimeout(() => {
+    //     messageContainer.classList.remove('card__message--visible');
+    // }, 3000);  // El mensaje desaparecerá después de 3 segundos
