@@ -1,0 +1,49 @@
+.main {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #C2F2E9, #06AB7B);
+}
+button {
+    color: #fff;
+    background-color: #06AB7B;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #084c39;
+}
+.order__direccion, .order__points, .order__pago, .order__login {
+    margin: 1rem 0;
+}
+
+.order__button--secondary {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order__button--secondary:hover {
+    background-color: #FFC107;
+}
+
+.order__link {
+    color: #06AB7B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.order__link:hover {
+    text-decoration: underline;
+}
+

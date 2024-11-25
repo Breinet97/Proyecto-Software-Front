@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../sub-paginas-style/Protein_Shake.css">
     <!-- iconos boostrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -106,8 +107,6 @@
     </header>
     <!-- FIN DEL HEAD  -->
 
-
-
     <!-- INICIO CONTENIDO  -->
     <main class="main">
         <section class="main__section">
@@ -126,47 +125,48 @@
                 buscan una bebida nutritiva sin añadir calorías extras. Ideal para disfrutar en cualquier momento del
                 día.</p>
         </section>
-
     </main>
+
     <h2 class="title">Menú</h2>
 
     <!-- menu bebidas -->
     <section class="batidos__grid" id="pedido">
-        <section class="batidos__card">
+        <section class="batidos__card" id="Cheescake_de_Frutos_Rojos">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Cheescake_de_Frutos_Rojos.jpeg"
                     alt="Cheescake de Frutos Rojos">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Cheescake de Frutos Rojos" onclick="addToCart(1, 'Cheescake de Frutos Rojos', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Cheescake_de_Frutos_Rojos" onclick="addToCart(1, 'Cheescake de Frutos Rojos', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
-
             </section>
-
+    
             <section class="card__text">
                 <h3 class="card__text--title">Cheescake de Frutos Rojos</h3>
-                <p class="card__text--parrafo">$ 19.000,00</p>
+                <p class="card__text--parrafo">$ 19.000,00</p>
                 <p class="card__text--parrafo">Shake con vitaminas, nutrientes y pocas calorías</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(1, 'Cheescake de Frutos Rojos', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(1, 'Cheescake de Frutos Rojos', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
             </section>
+            <!-- Mensaje de notificación -->
+            <section class="card__message"></section>
         </section>
 
-        <section class="batidos__card" id="pedido">
+        <section class="batidos__card" id="Mani_Mani_Dog">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Mani_Mani_Dog.jpeg" alt="Mani Mani Dog">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Mani_Mani_Dog" onclick="addToCart(2, 'Mani Mani Dog', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
-                        <i class="bi bi-basket2"></i>
+                    <a class="card__section--neverita-icon" href="#Mani_Mani_Dog" onclick="addToCart(2, 'Mani Mani Dog', 19000)">
+                       <i class="bi bi-basket2"></i>
                     </a>
                 </section>
 
@@ -176,21 +176,21 @@
                 <h3 class="card__text--title">Mani Mani Dog</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(2, 'Mani Mani Dog', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(2, 'Mani Mani Dog', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
             </section>
         </section>
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Fresa_Gatuna">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Fresa_Gatuna.jpeg" alt="Fresa Gatuna">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Fresa_Gatuna" onclick="addToCart(3, 'Fresa Gatuna', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Fresa_Gatuna" onclick="addToCart(3, 'Fresa Gatuna', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -201,48 +201,47 @@
                 <h3 class="card__text--title">Fresa Gatuna</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(3, 'Fresa Gatuna', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(3, 'Fresa Gatuna', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
             </section>
         </section>
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Naranja_Lenguetazos">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Naranja_lenguetazos.jpeg"
                     alt="Naranja Lenguetazos">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Naranja_Lenguetazos" onclick="addToCart(4, 'Naranja Lenguetazos', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Naranja_Lenguetazos" onclick="addToCart(4, 'Naranja Lenguetazos', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
-
             </section>
 
             <section class="card__text">
                 <h3 class="card__text--title">Naranja lenguetazos</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(4, 'Naranja Lenguetazos', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(4, 'Naranja Lenguetazos', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
             </section>
         </section>
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Vainilla_Arandanos_Guau">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Vainilla_Arándanos_Guau.jpeg"
                     alt="Vainilla Arándanos Guau">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Vainilla_Arandanos_Guau" onclick="addToCart(5, 'Vainilla Arandanos Guau', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Vainilla_Arandanos_Guau" onclick="addToCart(5, 'Vainilla Arandanos Guau', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -253,8 +252,8 @@
                 <h3 class="card__text--title">Vainilla Arándanos Guau</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(5, 'Vainilla Arandanos Guau', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(5, 'Vainilla Arandanos Guau', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -262,40 +261,39 @@
         </section>
 
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Piel_de_Limon_Huellitas">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Pie_de_limón_Huellitas.jpeg"
                     alt="Pie de limón Huellitas">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Piel_de_Limon_Huellitas" onclick="addToCart(6, 'Piel De Limon Huellitas', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Piel_de_Limon_Huellitas" onclick="addToCart(6, 'Piel De Limon Huellitas', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
-
             </section>
 
             <section class="card__text">
                 <h3 class="card__text--title">Pie de limón Huellitas</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(6, 'Piel De Limon Huellitas', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(6, 'Piel De Limon Huellitas', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
             </section>
         </section>
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Vainilla_Francesa_Dog_Lover">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Vainilla_Francesa_Dog_lover.jpeg"
                     alt="Pie de limón Huellitas">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Vainilla_Francesa_Dog_Lover" onclick="addToCart(7, 'Vainilla Francesa Dog lover', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Vainilla_Francesa_Dog_Lover" onclick="addToCart(7, 'Vainilla Francesa Dog lover', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -306,8 +304,8 @@
                 <h3 class="card__text--title">Vainilla Francesa Dog lovers</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(7, 'Vainilla Francesa Dog lover', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(7, 'Vainilla Francesa Dog lover', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -315,26 +313,25 @@
         </section>
 
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Rollo de canela Minimo">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_shake/Rollo_de_canela_Minino.jpeg"
                     alt="Pie de limón Huellitas">
-                <a class="card__section--a" href="./realizar_pedido.html">Comprar!!!</a>
+                <a class="card__section--a" href="#Rollo de canela Minimo" onclick="addToCart(8, 'Rollo de canela Minino', 19000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
+                    <a class="card__section--neverita-icon" href="#Rollo de canela Minimo" onclick="addToCart(8, 'Rollo de canela Minino', 19000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
-
             </section>
 
             <section class="card__text">
                 <h3 class="card__text--title">Rollo de canela Minino</h3>
                 <p class="card__text--parrafo">$ 19.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(8, 'Rollo de canela Minino', 19000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(8, 'Rollo de canela Minino', 19000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -345,12 +342,6 @@
             <section class="card__section">
                 <img class="card__section--img" src="../media/imagenes/batidos/Protein_shake.jpeg" alt="Protein Shake">
                 <a class="card__section--a" href="../index.html#content__menu">Otras Opciones!!!</a>
-                <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="./neverita.html">
-                        <i class="bi bi-basket2"></i>
-                    </a>
-                </section>
-
             </section>
 
             <section class="card__text">
@@ -363,8 +354,8 @@
                 </section>
             </section>
         </section>
-
     </section>
+    
 
     <!-- fin CONTENIDO  -->
 
@@ -425,6 +416,7 @@
             <p class="footer__copyright">&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
         </section>
     </footer>
+     <!-- funcionalidad  -->
+    <script src="../script/comprar_batido.js"></script>
 </body>
-
 </html>

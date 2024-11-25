@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protein Shake</title>
-    <!-- estilos generales  -->
+    <title>Confirmacion Pago</title>
     <link rel="stylesheet" href="../general-pagina-style/general.css">
     <!-- estilo css pagina principal  -->
-    <link rel="stylesheet" href="../sub-paginas-style/waffles.css">
+    <link rel="stylesheet" href="../sub-paginas-style/pago.css">
     <!-- iconos boostrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -25,7 +24,7 @@
                     <a class="menu__link" href="../index.html">Inicio</a>
                 </li>
                 <li class="menu__option">
-                    <a class="menu__link" href="../index.html#content__menu">Menú
+                    <a class="menu__link" href="#content__menu">Menú
                         <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul class="submenu">
@@ -36,7 +35,7 @@
                             <a class="menu__link" href="./frostea_Revitalizante.html">Frostea Revitalizante</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="./beauty_Booster.html">Beauty Booster</a>
+                            <a class="menu__link" href="#">Beauty Booster</a>
                         </li>
                         <li class="menu__option submenu__option">
                             <a class="menu__link" href="./protein_Ice_Coffee.html">Protein Ice Coffee</a>
@@ -48,7 +47,7 @@
                             <a class="menu__link" href="./hot_Tea.html">Hot Tea</a>
                         </li>
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="#">Waffles</a>
+                            <a class="menu__link" href="./waffles.html">Waffles</a>
                         </li>
                         <li class="menu__option submenu__option">
                             <a class="menu__link" href="./snacks.html">Snacks</a>
@@ -61,7 +60,9 @@
                     </a>
                     <ul class="submenu">
                         <li class="menu__option submenu__option">
-                            <a class="menu__link" href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">Comunidad</a>
+                            <a class="menu__link"
+                                href="https://api.whatsapp.com/message/IHBQDSKPMB4IO1?autoload=1&app_absent=0&fbclid=PAY2xjawGWcu9leHRuA2FlbQIxMAABpp8SdmOMvDOSuEGVGbVeQNAsmImM7cNs1CpFLbPaC1Js9Od8ex-Bm23IZQ_aem_AtVIA74JjkNSOhFVg514SA">Comunidad
+                            </a>
                         </li>
                         <li class="menu__option submenu__option">
                             <a class="menu__link" href="./inicio_sesion.html">Inicio Sesión</a>
@@ -75,11 +76,10 @@
                         <li class="menu__option submenu__option">
                             <a class="menu__link" href="./nosotros.html#points">Sistema De Puntos</a>
                         </li>
-
                     </ul>
                 </li>
                 <li class="menu__option">
-                    <a class="menu__link" href="#pedido">Realizar Pedido
+                    <a class="menu__link" href="#">Realizar Pedido
                         <i class="bi bi-cup-straw"></i>
                     </a>
                 </li>
@@ -103,76 +103,22 @@
             </a>
         </section>
     </header>
-<!-- FIN DEL HEAD  -->
+    <!-- Fin head  -->
 
-
-
-<!-- INICIO CONTENIDO  -->
+    <!-- Confirmacion pago  -->
     <main class="main">
-        <section class="main__section">
-            <img class="main__img" src="../media/imagenes/batidos/productos_Waffles/waffles_sencillos.png" alt="waffles">
-        </section>
-        <section class="main__text">
-            <h1 class="main__title">Waffles</h1>
-            <p class="main__parrafo">Deliciosos waffles recién hechos, perfectos para cualquier momento del día.</p>
-            <p class="main__parrafo-bold">Beneficios:</p>
-            <p>Un delicioso manjar que combina lo mejor de un waffle recién hecho, suave y crujiente, con fresas frescas y jugosas, crema suave y un toque de helado cremoso.</p>
-            <p>Esta combinación de sabores y texturas crea una experiencia única que es ideal para compartir o disfrutar por ti mismo. Perfecto para cualquier ocasión, desde un antojo a media tarde hasta un postre especial después de una comida. Cada bocado es una explosión de sabor que te hará querer más.</p>
-        </section>
+        <h1>Continuar con tu Pedido</h1>
+        <p>¿Ya estás registrado?</p>
+        <button onclick="handleResponse('registrado')">Sí, estoy registrado</button>
+        <button onclick="handleResponse('no-registrado')">No, quiero registrarme</button>
+
+        <p>¿Deseas acumular puntos?</p>
+        <button onclick="handlePoints('sí')">Sí</button>
+        <button onclick="handlePoints('no')">No</button>
 
     </main>
-    <h2 class="title">Menú</h2>
 
-    <!-- menu bebidas -->
-    <section class="batidos__grid" id="pedido">
-        <section class="batidos__card" id="Waffles_Sencillos">
-            <section class="card__section">
-                <img class="card__section--img"
-                    src="../media/imagenes/batidos/productos_Waffles/waffles_sencillos.png" alt="Waffles Sencillos">
-                <a class="card__section--a" href="#Waffles_Sencillos" onclick="addToCart(1, 'Waffles Sencillos', 17000)">Comprar!!!</a>
-                <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="#Waffles_Sencillos" onclick="addToCart(1, 'Waffles Sencillos', 17000)">
-                        <i class="bi bi-basket2"></i>
-                    </a>
-                </section>
-
-            </section>
-
-            <section class="card__text">
-                <h3 class="card__text--title">Waffles Sencillos</h3>
-                <p class="card__text--parrafo">$ 19.000,00</p>
-                <p class="card__text--parrafo">¡El postre perfecto! Waffles recién hechos, coronados con fresas frescas, crema suave y una bola de helado que se derrite deliciosamente. </p>
-                <section class="card__opcion">
-                    <a class="card__section--compra" href="./realizar_pedido.html" href="#Waffles_Sencillos" onclick="addToCart(1, 'Waffles Sencillos', 17000)">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="./neverita.html" href="#Waffles_Sencillos" onclick="addToCart(1, 'Waffles Sencillos', 17000)">Neverita
-                        <i class="bi bi-basket2"></i>
-                    </a>
-                </section>
-            </section>
-             <!-- Mensaje de notificación -->
-             <section class="card__message"></section>
-        </section>
-        
-        <section class="batidos__card">
-            <section class="card__section">
-                <img class="card__section--img"
-                    src="../media/imagenes/batidos/waffle.jpg" alt="Mani Mani Dog">
-                <a class="card__section--a" href="../index.html#content__menu">Otras Opciones!!!</a>
-            </section>
-
-            <section class="card__text">
-                <h3 class="card__text--title">¡Estamos trabajando para ofrecerte más deliciosos Waffles! </h3>
-                <p class="card__text--parrafo">Mientras tanto, te invitamos a explorar nuestro menú y descubrir las opciones que ya tenemos disponibles. ¡Seguro encontrarás algo que te encantará!</p>
-                <section class="card__opcion">
-                    <a class="card__section--compra" href="../index.html#content__menu">Ver Menu!!!</a>
-                </section>
-            </section>
-        </section>
-    </section>
-    <!-- fin CONTENIDO  -->
-
-
-<!-- INICIO FOOTER  -->
+    <!-- INICIO FOOTER  -->
     <footer class="footer">
         <section class="footer__info">
             <h2 class="footer__title">S'for You Nutrition</h2>
@@ -195,12 +141,12 @@
                         <a href="#" class="footer__link">Realizar Pedido
                             <i class="bi bi-cup-straw"></i>
                         </a>
+
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Neverita
+                        <a href="./neverita.html" class="footer__link">Neverita
                             <i class="bi bi-basket2"></i>
                         </a>
-
                     </li>
                 </ul>
             </nav>
@@ -222,12 +168,30 @@
                         <a href="#" class="footer__social-link">WhatsApp
                             <i class="bi bi-whatsapp"></i>
                         </a>
+
                     </li>
                 </ul>
             </section>
             <p class="footer__copyright">&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
         </section>
     </footer>
-    <script src="../script/comprar_batido.js"></script>
+    <script>
+        function handleResponse(status) {
+            if (status === 'registrado') {
+                window.location.href = 'pedido-confirmacion.html';
+            } else {
+                window.location.href = 'registro-formulario.html';
+            }
+        }
+
+        function handlePoints(option) {
+            if (option === 'sí') {
+                alert('¡Perfecto! Acumularás puntos en tu cuenta.');
+            } else {
+                alert('Continuarás sin acumular puntos.');
+            }
+        }
+    </script>
 </body>
+
 </html>

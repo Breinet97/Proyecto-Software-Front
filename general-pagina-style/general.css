@@ -94,6 +94,30 @@ body{
     color: yellow;
 }
 
+/* Estilo para el bloque del mensaje */
+.card__message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #06AB7B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* oculto */
+    display: none; 
+    /* Asegura que esté por encima de otros elementos */
+    z-index: 1000; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Modificadores pueden ser agregados en el futuro si se requieren */
+.card__message--visible {
+    display: block;
+}
+
+
 /* - - - - - - - ESTILOS PIE DE PAGINA - - - - - -   */
 /* Bloque principal */
 .footer {

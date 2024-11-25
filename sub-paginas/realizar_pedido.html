@@ -104,99 +104,210 @@
         </section>
     </header>
     <!-- Fin head  -->
+    <main class="order">
+        <section>
+            <h1 class="order__title">Realiza tu Pedido</h1>
+        </section>
 
-    <section class="order">
-      <h2 class="order__title">Realiza tu Pedido</h2>
-      <form class="order__form" action="#" method="POST">
-        <label class="order__label" for="nombre">Nombre:</label>
-        <input class="order__input" type="text" id="nombre" name="nombre" required>
-  
-        <label class="order__label" for="email">Correo Electrónico:</label>
-        <input class="order__input" type="email" id="email" name="email" required>
-  
-        <label class="order__label" for="batido">Selecciona tu Batido:</label>
-        <select class="order__select" id="batido" name="batido">
-          <option value="batido1">Cheescake de Frutos Rojos</option>
-          <option value="batido2">Mani Mani Dog</option>
-          <option value="batido3">Fresa Gatuna</option>
-        </select>
-  
-        <label class="order__label" for="cantidad">Cantidad:</label>
-        <input class="order__input" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+        <section>
+            <form class="order__form" action="#" method="POST" id="orderForm">
+                <section>
+                    <label class="order__label" for="nombre">Nombre:</label>
+                    <input class="order__input" type="text" id="nombre" name="nombre" required>
+                </section>
 
-        <fieldset class="order__fieldset">
-          <legend class="order__legend">Tipo de Pedido:</legend>
-          <label class="order__radio-label">
-            <input class="order__radio" type="radio" id="domicilio" name="tipo_pedido" value="domicilio" required>
-            A Domicilio
-          </label>
-          <label class="order__radio-label">
-            <input class="order__radio" type="radio" id="tienda" name="tipo_pedido" value="tienda">
-            Recoger en Tienda
-          </label>
-        </fieldset>
-  
-        <button class="order__button" type="submit">Realizar Pedido</button>
-      </form>
-    </section>
+                <section>
+                    <label class="order__label" for="email">Correo Electrónico:</label>
+                    <input class="order__input" type="email" id="email" name="email" required>
+                </section>
+
+                <section>
+                    <label class="order__label" for="batido">Selecciona tu Batido:</label>
+                    <select class="order__select" id="batido" name="batido">
+                        <option value="batido1">Cheescake de Frutos Rojos</option>
+                        <option value="batido2">Mani Mani Dog</option>
+                        <option value="batido3">Fresa Gatuna</option>
+                    </select>
+                </section>
+
+                <section>
+                    <label class="order__label" for="cantidad">Cantidad:</label>
+                    <input class="order__input" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+                </section>
+
+                <section>
+                    <h2 class="order__subtitle">Tipo de Pedido:</h2>
+                    <label>
+                        <input class="order__radio" type="radio" id="domicilio" name="tipo_pedido" value="domicilio"
+                            required>
+                        A Domicilio
+                    </label>
+                    <label>
+                        <input class="order__radio" type="radio" id="tienda" name="tipo_pedido" value="tienda">
+                        Recoger en Tienda
+                    </label>
+                </section>
+
+                <section id="direccionContainer" style="display: none;">
+                    <label class="order__label" for="direccion">Dirección:</label>
+                    <input class="order__input" type="text" id="direccion" name="direccion"
+                        placeholder="Ingresa tu dirección">
+                </section>
+
+                <section id="recogerContainer" style="display: none;">
+                    <label class="order__label" for="fechaRecoger">Fecha:</label>
+                    <input class="order__input" type="date" id="fechaRecoger" name="fechaRecoger" required>
+                    <label class="order__label" for="horaRecoger">Hora:</label>
+                    <input class="order__input" type="time" id="horaRecoger" name="horaRecoger" required>
+                </section>
+
+                <section>
+                    <h2 class="order__subtitle">Acumula Puntos:</h2>
+                    <label>
+                        <input class="order__radio" type="radio" id="acumularSi" name="acumula_puntos" value="si"
+                            required>
+                        Sí, quiero acumular puntos
+                    </label>
+                    <label>
+                        <input class="order__radio" type="radio" id="acumularNo" name="acumula_puntos" value="no">
+                        No, gracias
+                    </label>
+                </section>
+
+                <section id="acumulaPuntosContainer" style="display: none;">
+                    <p>¿Ya tienes una cuenta? <a href="./inicio_sesion.html" class="order__link">Iniciar Sesión</a></p>
+                </section>
+
+                <section id="noAcumulaPuntosContainer" style="display: none;">
+                    <p>¿Aún no tienes cuenta? <a href="./registro.html" class="order__link">Regístrate</a></p>
+                </section>
+
+                <section>
+                    <h2 class="order__subtitle">Método de Pago:</h2>
+                    <label>
+                        <input class="order__radio" type="radio" name="metodo_pago" value="tarjeta" required>
+                        Tarjeta
+                    </label>
+                    <label>
+                        <input class="order__radio" type="radio" name="metodo_pago" value="efectivo">
+                        Efectivo
+                    </label>
+                </section>
+
+                <section>
+                    <p id="total">Total: $0.00</p>
+                </section>
+
+                <section>
+                    <button class="order__button" type="submit">Realizar Pedido</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
 
     <!-- INICIO FOOTER  -->
     <footer class="footer">
-      <section class="footer__info">
-          <h2 class="footer__title">S'for You Nutrition</h2>
-          <p class="footer__description">Tu salud y bienestar son nuestra prioridad. Descubre nuestras bebidas y
-              alimentos nutritivos.</p>
-      </section>
-      <section class="footer__content">
-          <nav class="footer__nav">
-              <ul class="footer__list">
-                  <li class="footer__item">
-                      <a href="#" class="footer__link">Inicio</a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="#" class="footer__link">Menu</a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="#" class="footer__link">Nosotros</a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="#" class="footer__link">Realizar Pedido
-                          <i class="bi bi-cup-straw"></i>
-                      </a>
+        <section class="footer__info">
+            <h2 class="footer__title">S'for You Nutrition</h2>
+            <p class="footer__description">Tu salud y bienestar son nuestra prioridad. Descubre nuestras bebidas y
+                alimentos nutritivos.</p>
+        </section>
+        <section class="footer__content">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Inicio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Menu</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Nosotros</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Realizar Pedido
+                            <i class="bi bi-cup-straw"></i>
+                        </a>
 
-                  </li>
-                  <li class="footer__item">
-                      <a href="./neverita.html" class="footer__link">Neverita
-                          <i class="bi bi-basket2"></i>
-                      </a>
-                  </li>
-              </ul>
-          </nav>
-          <section class="footer__social">
-              <h3 class="footer__subtitle">Síguenos en:</h3>
-              <ul class="footer__social-list">
-                  <li class="footer__social-item">
-                      <a href="#" class="footer__social-link">Facebook
-                          <i class="bi bi-facebook"></i>
-                      </a>
-                  </li>
-                  <li class="footer__social-item">
-                      <a href="#" class="footer__social-link">Instagram
-                          <i class="bi bi-instagram"></i>
-                      </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./neverita.html" class="footer__link">Neverita
+                            <i class="bi bi-basket2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="footer__social">
+                <h3 class="footer__subtitle">Síguenos en:</h3>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">Facebook
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">Instagram
+                            <i class="bi bi-instagram"></i>
+                        </a>
 
-                  </li>
-                  <li class="footer__social-item">
-                      <a href="#" class="footer__social-link">WhatsApp
-                          <i class="bi bi-whatsapp"></i>
-                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">WhatsApp
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
 
-                  </li>
-              </ul>
-          </section>
-          <p class="footer__copyright">&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
-      </section>
-  </footer>
+                    </li>
+                </ul>
+            </section>
+            <p class="footer__copyright">&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+
+    <script>
+        // Referencias a elementos
+        const acumularSi = document.getElementById('acumularSi');
+        const acumularNo = document.getElementById('acumularNo');
+        const acumulaPuntosContainer = document.getElementById('acumulaPuntosContainer');
+        const noAcumulaPuntosContainer = document.getElementById('noAcumulaPuntosContainer');
+
+        const domicilioRadio = document.getElementById('domicilio');
+        const tiendaRadio = document.getElementById('tienda');
+        const direccionContainer = document.getElementById('direccionContainer');
+        const recogerContainer = document.getElementById('recogerContainer');
+
+        // Función para alternar campos según el tipo de pedido
+        function toggleFields() {
+            if (domicilioRadio.checked) {
+                direccionContainer.style.display = 'block';
+                recogerContainer.style.display = 'none';
+            } else if (tiendaRadio.checked) {
+                direccionContainer.style.display = 'none';
+                recogerContainer.style.display = 'block';
+            } else {
+                direccionContainer.style.display = 'none';
+                recogerContainer.style.display = 'none';
+            }
+        }
+
+        // Función para alternar opciones de acumulación de puntos
+        function toggleAcumulaPuntos() {
+            if (acumularSi.checked) {
+                acumulaPuntosContainer.style.display = 'block';
+                noAcumulaPuntosContainer.style.display = 'none';
+            } else if (acumularNo.checked) {
+                acumulaPuntosContainer.style.display = 'none';
+                noAcumulaPuntosContainer.style.display = 'block';
+            }
+        }
+
+        // Eventos
+        domicilioRadio.addEventListener('change', toggleFields);
+        tiendaRadio.addEventListener('change', toggleFields);
+
+        acumularSi.addEventListener('change', toggleAcumulaPuntos);
+        acumularNo.addEventListener('change', toggleAcumulaPuntos);
+    </script>
 
 </body>
 

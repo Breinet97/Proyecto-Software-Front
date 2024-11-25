@@ -128,13 +128,13 @@
 
     <!-- menu bebidas -->
     <section class="batidos__grid" id="pedido">
-        <section class="batidos__card">
+        <section class="batidos__card" id="Amaretto_Wuff">
             <section class="card__section">
                 <img class="card__section--img" src="../media/imagenes/batidos/Protein_ice_coffee.jpeg"
-                    alt="Cheescake de Frutos Rojos">
-                <a class="card__section--a" href="">Comprar!!!</a>
+                    alt="Amaretto Wuff">
+                <a class="card__section--a" href="#Amaretto_Wuff" onclick="addToCart(1, 'Amaretto Wuff', 17000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="">
+                    <a class="card__section--neverita-icon" href="#Amaretto_Wuff" onclick="addToCart(1, 'Amaretto Wuff', 17000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -145,22 +145,24 @@
                 <h3 class="card__text--title">Amaretto Wuff</h3>
                 <p class="card__text--parrafo">$ 17.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(2, 'Amaretto Wuff', 17000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(2, 'Amaretto Wuff', 17000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
             </section>
+             <!-- Mensaje de notificación -->
+             <section class="card__message"></section>
         </section>
 
-        <section class="batidos__card">
+        <section class="batidos__card" id="Coffee_Extraladridos">
             <section class="card__section">
                 <img class="card__section--img"
                     src="../media/imagenes/batidos/productos_Protein_Ice_Coffee/Coffee_Extraladridos.jpeg"
                     alt="Coffee_Extraladridos">
-                <a class="card__section--a" href="">Comprar!!!</a>
+                <a class="card__section--a" href="#Coffee_Extraladridos" onclick="addToCart(2, 'Coffee Extraladridos', 17000)">Comprar!!!</a>
                 <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="">
+                    <a class="card__section--neverita-icon" href="#Coffee_Extraladridos" onclick="addToCart(2, 'Coffee Extraladridos', 17000)">
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -171,8 +173,8 @@
                 <h3 class="card__text--title">Coffee_Extraladridos</h3>
                 <p class="card__text--parrafo">$ 17.000,00</p>
                 <section class="card__opcion">
-                    <a class="card__section--compra" href="">Comprar!!!</a>
-                    <a class="card__section--neverita-icon" href="">Neverita
+                    <a class="card__section--compra" href="./realizar_pedido.html" onclick="addToCart(2, 'Coffee Extraladridos', 17000)">Comprar!!!</a>
+                    <a class="card__section--neverita-icon" href="./neverita.html" onclick="addToCart(2, 'Coffee Extraladridos', 17000)">Neverita
                         <i class="bi bi-basket2"></i>
                     </a>
                 </section>
@@ -184,12 +186,6 @@
                 <img class="card__section--img" src="../media/imagenes/batidos/Protein_ice_coffee.jpeg"
                     alt="Protein_Ice_Coffee">
                 <a class="card__section--a" href="../index.html#content__menu">Otras Opciones!!!</a>
-                <section class="card__section--neverita">
-                    <a class="card__section--neverita-icon" href="">
-                        <i class="bi bi-basket2"></i>
-                    </a>
-                </section>
-
             </section>
 
             <section class="card__text">
@@ -265,6 +261,7 @@
             <p class="footer__copyright">&copy; 2024 S'for You Nutrition. Todos los derechos reservados.</p>
         </section>
     </footer>
+    <script src="../script/comprar_batido.js"></script>
 </body>
 
 </html>

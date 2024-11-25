@@ -108,29 +108,30 @@
     <!-- Neverita -->
     <main class="main">
         <section class="cart" id="neverita">
-          <h2 class="cart__title">Tu Neverita</h2>
-          <table class="cart__table">
-            <thead class="cart__table-head">
-              <tr>
-                <th class="cart__table-header">Producto</th>
-                <th class="cart__table-header">Cantidad</th>
-                <th class="cart__table-header">Precio</th>
-                <th class="cart__table-header">Total</th>
-                <th class="cart__table-header">Acciones</th>
-              </tr>
-            </thead>
-            <tbody class="cart__table-body">
-              <!-- Aquí se llenarán los productos dinámicamente -->
-            </tbody>
-          </table>
-          <section class="cart__summary">
-            <p class="cart__total"><strong>Total: $0.00</strong></p>
-            <button class="cart__cta-btn" disabled>Finalizar Pedido</button>
-            <p class="cart__hint">Añade productos para finalizar tu pedido.</p>
-            <a href="#productos" class="cart__continue-shopping">Seguir Comprando</a>
-          </section>
+            <h2 class="cart__title">Tu Neverita</h2>
+            <table class="cart__table">
+                <thead class="cart__table-head">
+                    <tr>
+                        <th class="cart__table-header">Producto</th>
+                        <th class="cart__table-header">Cantidad</th>
+                        <th class="cart__table-header">Precio</th>
+                        <th class="cart__table-header">Total</th>
+                        <th class="cart__table-header">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="cart__table-body">
+                    <!-- Aquí se llenarán los productos dinámicamente -->
+                </tbody>
+            </table>
+            <section class="cart__summary">
+                <p class="cart__total"><strong>Total: $0.00</strong></p>
+                
+                <button class="cart__cta-btn" id="finalizarPedidoBtn" disabled>Finalizar Pedido</button>
+                <p class="cart__hint">Añade productos para finalizar tu pedido.</p>
+                <a href="../index.html#content" class="cart__continue-shopping">Seguir Comprando</a>
+            </section>
         </section>
-      </main>
+    </main>
       
 
     <!-- INICIO FOOTER  -->
@@ -191,7 +192,7 @@
         </section>
     </footer>
 
-    <script>
+    <script src="../script/neverita.js">
     </script>
 
 </body>
