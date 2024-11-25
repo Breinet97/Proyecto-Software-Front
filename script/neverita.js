@@ -99,6 +99,12 @@ function actualizarCantidad(index, cantidad) {
     document.querySelector('.cart__total').innerHTML = `<strong>Total: ${formatearMoneda(total)}</strong>`;
 }
 
+// Función para borrar todo el carrito
+function borrarCarrito() {
+    carrito = []; // Vaciar el array del carrito
+    localStorage.removeItem('carrito'); // Eliminar los datos del carrito en localStorage
+    cargarCarrito(); // Recargar la vista del carrito
+}
 
 // Manejar eventos de eliminar y actualizar cantidades
 document.addEventListener('DOMContentLoaded', function () {
@@ -123,10 +129,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Escuchar clic en el botón de finalizar pedido
     document.getElementById('finalizarPedidoBtn').addEventListener('click', function () {
+        // Forzar la cantidad a 1 para todos los productos antes de proceder
+        carrito.forEach(producto => {
+            if (!producto.cantidad || producto.cantidad < 1) {
+                producto.cantidad = 1; // Asignar la cantidad por defecto de 1
+            }
+        });
+
         if (carrito.length > 0) {
-            window.location.href = "realizar_pedido.html"; // Redirigir a otra página
+            // Guardar el carrito actualizado en localStorage
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+
+            // Redirigir a la página de "Realizar Pedido"
+            window.location.href = "realizar_pedido.html";
         } else {
             alert("Tu carrito está vacío. Agrega productos antes de finalizar el pedido.");
         }
+    });
+
+
+
+    // Escuchar clic en el botón de borrar carrito
+    document.getElementById('borrarCarritoBtn').addEventListener('click', function () {
+        borrarCarrito();
     });
 });

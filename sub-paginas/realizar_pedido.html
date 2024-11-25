@@ -121,18 +121,22 @@
                     <input class="order__input" type="email" id="email" name="email" required>
                 </section>
 
-                <section>
-                    <label class="order__label" for="batido">Selecciona tu Batido:</label>
-                    <select class="order__select" id="batido" name="batido">
-                        <option value="batido1">Cheescake de Frutos Rojos</option>
-                        <option value="batido2">Mani Mani Dog</option>
-                        <option value="batido3">Fresa Gatuna</option>
-                    </select>
-                </section>
-
-                <section>
-                    <label class="order__label" for="cantidad">Cantidad:</label>
-                    <input class="order__input" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+                <!-- Contenedor para mostrar el detalle del carrito -->
+                <section class="order__cart-detail">
+                    <h2 class="order__subtitle">Tu Pedido</h2>
+                    <table class="order__cart-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartDetailBody">
+                            <!-- Aquí se llenará dinámicamente el detalle del carrito -->
+                        </tbody>
+                    </table>
                 </section>
 
                 <section>
@@ -195,7 +199,7 @@
                 </section>
 
                 <section>
-                    <p id="total">Total: $0.00</p>
+                    <p id="total"><strong>Total: $0.00</strong></p>
                 </section>
 
                 <section>
@@ -264,49 +268,7 @@
         </section>
     </footer>
 
-    <script>
-        // Referencias a elementos
-        const acumularSi = document.getElementById('acumularSi');
-        const acumularNo = document.getElementById('acumularNo');
-        const acumulaPuntosContainer = document.getElementById('acumulaPuntosContainer');
-        const noAcumulaPuntosContainer = document.getElementById('noAcumulaPuntosContainer');
-
-        const domicilioRadio = document.getElementById('domicilio');
-        const tiendaRadio = document.getElementById('tienda');
-        const direccionContainer = document.getElementById('direccionContainer');
-        const recogerContainer = document.getElementById('recogerContainer');
-
-        // Función para alternar campos según el tipo de pedido
-        function toggleFields() {
-            if (domicilioRadio.checked) {
-                direccionContainer.style.display = 'block';
-                recogerContainer.style.display = 'none';
-            } else if (tiendaRadio.checked) {
-                direccionContainer.style.display = 'none';
-                recogerContainer.style.display = 'block';
-            } else {
-                direccionContainer.style.display = 'none';
-                recogerContainer.style.display = 'none';
-            }
-        }
-
-        // Función para alternar opciones de acumulación de puntos
-        function toggleAcumulaPuntos() {
-            if (acumularSi.checked) {
-                acumulaPuntosContainer.style.display = 'block';
-                noAcumulaPuntosContainer.style.display = 'none';
-            } else if (acumularNo.checked) {
-                acumulaPuntosContainer.style.display = 'none';
-                noAcumulaPuntosContainer.style.display = 'block';
-            }
-        }
-
-        // Eventos
-        domicilioRadio.addEventListener('change', toggleFields);
-        tiendaRadio.addEventListener('change', toggleFields);
-
-        acumularSi.addEventListener('change', toggleAcumulaPuntos);
-        acumularNo.addEventListener('change', toggleAcumulaPuntos);
+    <script src="../script/realizar_pedido.js">
     </script>
 
 </body>

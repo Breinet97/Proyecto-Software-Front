@@ -7,7 +7,8 @@ function addToCart(id, nombre, precio) {
     const producto = {
         id: id,
         nombre: nombre,
-        precio: precio
+        precio: precio,
+        cantidad: 1
     };
 
     // Agregar el producto al carrito
