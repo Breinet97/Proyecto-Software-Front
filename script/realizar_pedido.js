@@ -1,40 +1,42 @@
- // Referencias a elementos
- const acumularSi = document.getElementById('acumularSi');
- const acumularNo = document.getElementById('acumularNo');
- const acumulaPuntosContainer = document.getElementById('acumulaPuntosContainer');
- const noAcumulaPuntosContainer = document.getElementById('noAcumulaPuntosContainer');
 
- const domicilioRadio = document.getElementById('domicilio');
- const tiendaRadio = document.getElementById('tienda');
- const direccionContainer = document.getElementById('direccionContainer');
- const recogerContainer = document.getElementById('recogerContainer');
 
- // Función para alternar campos según el tipo de pedido
- function toggleFields() {
-     if (domicilioRadio.checked) {
-         direccionContainer.style.display = 'block';
-         recogerContainer.style.display = 'none';
-     } else if (tiendaRadio.checked) {
-         direccionContainer.style.display = 'none';
-         recogerContainer.style.display = 'block';
-     } else {
-         direccionContainer.style.display = 'none';
-         recogerContainer.style.display = 'none';
-     }
- }
+// Referencias a elementos
+const acumularSi = document.getElementById('acumularSi');
+const acumularNo = document.getElementById('acumularNo');
+const acumulaPuntosContainer = document.getElementById('acumulaPuntosContainer');
+const noAcumulaPuntosContainer = document.getElementById('noAcumulaPuntosContainer');
 
- // Función para alternar opciones de acumulación de puntos
- function toggleAcumulaPuntos() {
-     if (acumularSi.checked) {
-         acumulaPuntosContainer.style.display = 'block';
-         noAcumulaPuntosContainer.style.display = 'none';
-     } else if (acumularNo.checked) {
-         acumulaPuntosContainer.style.display = 'none';
-         noAcumulaPuntosContainer.style.display = 'block';
-     }
- }
+const domicilioRadio = document.getElementById('domicilio');
+const tiendaRadio = document.getElementById('tienda');
+const direccionContainer = document.getElementById('direccionContainer');
+const recogerContainer = document.getElementById('recogerContainer');
 
- // Función para cargar y mostrar el detalle del carrito
+// Función para alternar campos según el tipo de pedido
+function toggleFields() {
+    if (domicilioRadio.checked) {
+        direccionContainer.style.display = 'block';
+        recogerContainer.style.display = 'none';
+    } else if (tiendaRadio.checked) {
+        direccionContainer.style.display = 'none';
+        recogerContainer.style.display = 'block';
+    } else {
+        direccionContainer.style.display = 'none';
+        recogerContainer.style.display = 'none';
+    }
+}
+
+// Función para alternar opciones de acumulación de puntos
+function toggleAcumulaPuntos() {
+    if (acumularSi.checked) {
+        acumulaPuntosContainer.style.display = 'block';
+        noAcumulaPuntosContainer.style.display = 'none';
+    } else if (acumularNo.checked) {
+        acumulaPuntosContainer.style.display = 'none';
+        noAcumulaPuntosContainer.style.display = 'block';
+    }
+}
+
+// Función para cargar y mostrar el detalle del carrito
 function mostrarDetalleCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const cartDetailBody = document.getElementById('cartDetailBody');
@@ -134,9 +136,66 @@ document.addEventListener('DOMContentLoaded', function () {
     cargarDetalleCarrito();
 });
 
- // Eventos
- domicilioRadio.addEventListener('change', toggleFields);
- tiendaRadio.addEventListener('change', toggleFields);
+// Eventos
+domicilioRadio.addEventListener('change', toggleFields);
+tiendaRadio.addEventListener('change', toggleFields);
+acumularSi.addEventListener('change', toggleAcumulaPuntos);
+acumularNo.addEventListener('change', toggleAcumulaPuntos);
 
- acumularSi.addEventListener('change', toggleAcumulaPuntos);
- acumularNo.addEventListener('change', toggleAcumulaPuntos);
+// Botón de "Realizar Pedido"
+const orderButton = document.querySelector('.order__button');
+const messageContainer = document.querySelector('.card__message');
+
+orderButton.addEventListener('click', function () {
+    // Mostrar mensaje de éxito
+    messageContainer.textContent = '¡Pedido realizado con éxito!';
+    messageContainer.classList.add('card__message--visible');
+
+    // Limpiar los campos del formulario
+    document.querySelectorAll('input[type="text"], input[type="radio"], input[type="checkbox"], textarea').forEach((input) => {
+        input.value = '';  // Limpiar los campos de texto
+        input.checked = false;  // Desmarcar las casillas y radios
+    });
+
+    // Limpiar el carrito en localStorage
+    localStorage.removeItem('carrito');
+
+    // Limpiar la vista del carrito
+    const cartDetailBody = document.getElementById('cartDetailBody');
+    cartDetailBody.innerHTML = '<tr><td colspan="4">Tu carrito está vacío.</td></tr>';
+
+    // Crear un PDF con el detalle del carrito
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    if (carrito.length === 0) {
+        alert('No hay productos en el carrito para generar el reporte');
+        return;
+    }
+
+    // Usar jsPDF para crear el PDF
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Agregar título y fecha al reporte
+    doc.text("Reporte de Pedido", 20, 20);
+    doc.text("Fecha: " + new Date().toLocaleDateString(), 20, 30);
+
+    // Agregar los detalles del carrito
+    let yPosition = 40;
+    carrito.forEach((producto, index) => {
+        doc.text(`${index + 1}. ${producto.nombre} - $${producto.precio.toLocaleString()}`, 20, yPosition);
+        yPosition += 10;
+    });
+
+    // Calcular el total
+    const total = carrito.reduce((sum, producto) => sum + producto.precio, 0);
+    doc.text(`Total: $${total.toLocaleString()}`, 20, yPosition);
+
+    // Descargar el reporte como PDF
+    doc.save('reporte_pedido.pdf');
+
+    // Ocultar el mensaje después de 3 segundos
+    setTimeout(() => {
+        messageContainer.classList.remove('card__message--visible');
+    }, 3000);  // El mensaje desaparecerá después de 3 segundos
+});
+

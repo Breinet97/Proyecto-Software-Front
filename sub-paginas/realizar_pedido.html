@@ -185,7 +185,6 @@
                 <section id="noAcumulaPuntosContainer" style="display: none;">
                     <p>¿Aún no tienes cuenta? <a href="./registro.html" class="order__link">Regístrate</a></p>
                 </section>
-
                 <section>
                     <h2 class="order__subtitle">Método de Pago:</h2>
                     <label>
@@ -203,10 +202,17 @@
                 </section>
 
                 <section>
-                    <button class="order__button" type="submit">Realizar Pedido</button>
+                    <a href="../media/archivos/pedido_detalle.pdf" download>
+                        <button class="order__button" type="button">Realizar Pedido</button>
+                    </a>
                 </section>
+                <!-- Contenedor para mostrar los mensajes -->
+                <section class="card__message"></section> 
+
+
             </form>
         </section>
+
     </main>
 
 
@@ -270,6 +276,8 @@
 
     <script src="../script/realizar_pedido.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 
 </body>
 

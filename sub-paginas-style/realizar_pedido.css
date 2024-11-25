@@ -127,8 +127,69 @@ body {
     background-color: #eee;
     font-weight: bold;
 }
-  
-  .footer {
+
+/* Estilos para el mensaje de confirmación */
+.card__message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50; /* Color de fondo verde */
+  color: white; /* Texto blanco */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 9999; /* Asegúrate de que esté encima de otros elementos */
+  opacity: 0; /* Empieza invisible */
+  transition: opacity 0.5s ease-in-out; /* Transición para que el mensaje aparezca y desaparezca */
+}
+
+.card__message--visible {
+  opacity: 1; /* Cuando se añada la clase, se hace visible */
+}
+
+/* Estilo para el botón de descarga */
+.download-button {
+  background-color: #f4b400;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #ff9800;
+}
+
+/* Estilo para la sección del reporte */
+.report-section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: col
+}
+
+.footer {
     background-color: transparent;
 }
   
